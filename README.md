@@ -79,6 +79,11 @@
 
 ## [エディタ・IDE](./doc/エディタ・IDE.md)
 
+---
+
+# PC
+
+## [Thinkpad](./doc/Thinkpad.md)
 
 ---
 
