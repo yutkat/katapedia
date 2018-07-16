@@ -6,8 +6,8 @@
 ### 入れたパッケージ
 
 `sudo pacman -S ripgrep mlocate xf86-input-synaptics xorg-xinput tpacpi-bat acpi_call`
-`sudo pacman -S tlp`
-`sudo systemctl enable tlp`
+`sudo pacman -S tlp acpid`
+`sudo systemctl enable tlp acpid`
 
 `sudo yay -S i3-easyfocus-git clipmenu`
 
