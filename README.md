@@ -172,6 +172,8 @@
 
 ## [ansible](./doc/Ansible.md)
 
+## [Terraform](./doc/Terraform.md)
+
 ## [Gradle](./doc/Gradle.md)
 
 ## [Maven](./doc/Maven.md)
