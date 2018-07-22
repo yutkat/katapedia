@@ -16,6 +16,18 @@
 
 親コンテナへ移動する: mod+a
 
+#### TroubleShooting
+
+##### i3-save-treeでエラーがでる
+
+```
+Can't locate AnyEvent/I3.pm in @INC (you may need to install the AnyEvent::I3 module) (@INC contains: /usr/lib/perl5/5.26/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.26/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.26/core_perl /usr/share/perl5/core_perl) at /usr/bin/i3-save-tree line 19.
+BEGIN failed--compilation aborted at /usr/bin/i3-save-tree line 19.
+```
+
+`sudo pacman -S perl-anyevent-i3`
+で解決した
+
 
 ## Port
 
