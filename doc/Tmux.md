@@ -147,8 +147,14 @@ rm -rf $HOME/tmux_tmp
 echo "$HOME/local/bin/tmux is now available. You can optionally add $HOME/local/bin to your PATH."
 ~~~
 
+## TroubleShooting
 
-### FAQ
+### 色がおかしい
+
+tmux -2で起動するか、echo $TERMで256colorがついていることを確認する
+
+
+## FAQ
 
 #### シンボルの意味
 
