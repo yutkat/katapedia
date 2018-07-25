@@ -151,7 +151,7 @@
 
 ## [vim](./doc/Vim.md)
 
-## [tmux](./doc/tmux.md)
+## [tmux](./doc/Tmux.md)
 
 ## [Eclipse](./doc/Eclipse.md)
 
