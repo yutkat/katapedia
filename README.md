@@ -1,7 +1,6 @@
 # Katapedia
 
-![](img/pikachu-mini.jpg)
-
+![](img/kirby.png)
 
 
 ---
