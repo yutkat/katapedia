@@ -18,6 +18,12 @@
 
 #### TroubleShooting
 
+#### mod+v,mod+hで作った親コンテナが削除できない
+
+mod+shift+up等で移動させれば自動的に削除される
+
+https://unix.stackexchange.com/questions/173754/how-to-move-a-window-up-to-the-level-of-its-parent-window-in-i3wm
+
 ##### i3-save-treeでエラーがでる
 
 ```
