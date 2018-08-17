@@ -6,7 +6,9 @@
 ### 入れたパッケージ
 
 `sudo pacman -S ripgrep mlocate xf86-input-synaptics xorg-xinput tpacpi-bat acpi_call urxvt-perls`
+
 `sudo pacman -S tlp`
+
 `sudo systemctl enable tlp`
 
 `sudo yay -S i3-easyfocus-git clipmenu urxvt-resize-font-git`
