@@ -7,7 +7,7 @@
 
 `sudo pacman -S ripgrep mlocate xf86-input-synaptics xorg-xinput tpacpi-bat acpi_call urxvt-perls`
 
-`sudo pacman -S tlp`
+`sudo pacman -S tlp acpi`
 
 `sudo systemctl enable tlp`
 
