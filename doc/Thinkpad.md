@@ -24,3 +24,12 @@
 https://wiki.archlinux.jp/index.php/Tp_smapi
 
 
+### Troubleshooting
+
+#### システム暗号化
+
+dm-encryptを使ってcryptsetupしてシステムを暗号化したが、起動時にパスワードプロンプトが表示されない
+
+/etc/mkinitcpio.conf のMODULESにi915を追加したら表示されるようになる 
+
+https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_X1_Carbon_(Gen_6)
