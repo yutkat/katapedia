@@ -151,6 +151,19 @@ sudo make logme
 
 ### [xrdp](xrdp.md)
 
+### リモートデスクトップ
+
+今まではrdesktopを使っていたが
+
+`ERROR: CredSSP: Initialize failed, do you have correct kerberos tgt initialized`
+https://github.com/rdesktop/rdesktop/issues/28
+というエラーで使えなかったためfreerdpに乗り換え
+
+インストール
+`sudo pacman -S freerdp`
+
+`xfreerdp /u:<username>  /f +fonts +clipboard  /v:<ip>`
+
 
 ### mysql
 
