@@ -292,7 +292,7 @@ ssh-copyid -i .ssh/id_rsa.pub xxx@xxx
 
 `/etc/udev/rules.d/95-monitor-hotplug.rules`
 
-`SUBSYSTEM=="drm", ACTION=="change", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/username/.Xauthority", RUN+="/usr/local/bin/detect_displays.sh"`
+`SUBSYSTEM=="drm", ACTION=="change", RUN+="/usr/local/bin/detect_displays.sh"`
 
 ---
 
