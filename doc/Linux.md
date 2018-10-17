@@ -284,7 +284,38 @@ ssh-copyid -i .ssh/id_rsa.pub xxx@xxx
 
 /etc/update-motd.dに（番号）-機能 のファイル（シェル）を作成する。
 
+---
 
+## 外部デバイス
+
+### ディレクトリ接続時に自動接続
+
+`/etc/udev/rules.d/95-monitor-hotplug.rules`
+
+`SUBSYSTEM=="drm", ACTION=="change", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/username/.Xauthority", RUN+="/usr/local/bin/detect_displays.sh"`
+
+---
+
+## セキュリティ
+
+### ロック
+
+`/etc/systemd/system/i3lock.service`
+
+```
+[Unit]
+Description=i3lock
+Before=sleep.target
+
+[Service]
+User=username
+Type=forking
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/i3lock -c 282C34
+
+[Install]
+WantedBy=sleep.target
+```
 
 ---
 
