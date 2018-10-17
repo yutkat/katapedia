@@ -300,7 +300,7 @@ ssh-copyid -i .ssh/id_rsa.pub xxx@xxx
 
 ### ロック
 
-`/etc/systemd/system/i3lock.service`
+`/etc/systemd/system/i3lock@username.service`
 
 ```
 [Unit]
@@ -308,8 +308,8 @@ Description=i3lock
 Before=sleep.target
 
 [Service]
-User=username
-Type=forking
+User=%I
+Type=simple
 Environment=DISPLAY=:0
 ExecStart=/usr/bin/i3lock -c 282C34
 
