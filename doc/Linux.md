@@ -309,7 +309,7 @@ Before=sleep.target
 
 [Service]
 User=%I
-Type=simple
+Type=forking
 Environment=DISPLAY=:0
 ExecStart=/usr/bin/i3lock -c 282C34
 
