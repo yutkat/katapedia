@@ -296,6 +296,47 @@ ssh-copyid -i .ssh/id_rsa.pub xxx@xxx
 
 ---
 
+## X（GUI）をリモートで使う
+
+### SSH X11Forward(遅い)
+
+/etc/ssh/sshd_configに
+`X11UseLocalhost no`
+を追加
+
+`$ ssh -X user@remote-pc-ip`
+
+`$ echo $DISPLAY`
+`xx.xx.xx.xx:10.0`とかが入っているはず
+
+`$ xev`
+
+### xhost(セキュリティ的に弱い)
+
+* ローカル側（画面表示側）
+xhost +remote-pc-ip
+(IP（ホスト名）でアクセスを制限する xhost +だと全アクセスになるが危険。デバッグ時に使うのはOK)
+
+* リモート側（画面を表示したい側）
+export DISPLAY="xx.xx.xx.xx:0"
+
+### xauth
+
+* ローカル側（画面表示側）
+xauth list
+`192.168.1.10  MIT-MAGIC-COOKIE-1  xxxxxxxxxxxxxxxxxxxxxxxxx`をコピー
+
+* リモート側（画面を表示したい側）
+
+xauth add 192.168.1.10  MIT-MAGIC-COOKIE-1  xxxxxxxxxxxxxxxxxxxxxxxxx
+export DISPLAY="xx.xx.xx.xx:0"
+
+- http://luozengbin.github.io/blog/2014-06-21-%5B%E3%83%A1%E3%83%A2%5D%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88x%E3%81%AE%E6%8E%A5%E7%B6%9A%E6%96%B9%E6%B3%95.html
+- http://www.ep.sci.hokudai.ac.jp/~inex/y2007/0125/x.html
+
+---
+
+
 ## セキュリティ
 
 ### ロック
