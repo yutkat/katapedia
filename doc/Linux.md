@@ -422,6 +422,27 @@ find . | cpio -o -H newc | xz -9 –format=lzma > ../new-initrd.img
 
 ## Troubleshooting
 
+### 音が思った出力先から出ない
+
+思ったサウンドカードから音がでないときの対処
+
+1. サウンドカードの読み込み順(優先順位)を固定する
+`/etc/modprobe.d/sound.conf`を編集
+2. `cat /proc/asound/modules`で優先順位が高く（数字が低く）なっていることを確認
+3. `aplay -l`と`aplay /usr/share/sounds/alsa/Front_Center.wav -D plughw:0,0`を駆使しながら希望のサウンドカードから音がでることを確認
+4. `~/.asoundrc`に
+```
+pcm.!default "plughw:0,0"
+ctl.!default "plughw:0,0"
+```
+という形で音がなった-Dの引数を入力
+5. `aplay /usr/share/sounds/alsa/Front_Center.wav -D default`で音がなるかを確認
+6. pulseaudioのデフォルトも変更`pacmd list-sinks | grep -e 'name:' -e 'index:'`で現在のデフォルト確認
+7. nameの<>部分 eg. name: <alsa_output.pci-0000_00_1f.3.analog-stereo>を使って`pacmd set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo`を実
+
+https://qiita.com/propella/items/4699eda71cd742cba8d3
+
+
 ### CentOSでメディアのyum update時にエラーになる
 
 `http://192.168.1.10/yum_repositories/CentOS-6.7-x86_64-bin-DVD1/repodata/c11b211333eadda7b2e2d0f7fa8ffbf70a1d32d5182babbb43b90427578e2891-primary.sqlite.bz2: [Errno 14] PYCURL ERROR 22 - "The requested URL returned error: 404 Not Found"`
