@@ -440,6 +440,8 @@ ctl.!default "plughw:0,0"
 6. pulseaudioのデフォルトも変更`pacmd list-sinks | grep -e 'name:' -e 'index:'`で現在のデフォルト確認
 7. nameの<>部分 eg. name: <alsa_output.pci-0000_00_1f.3.analog-stereo>を使って`pacmd set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo`を実
 
+chrome/chromiumだけ変えたいならAudioPack(https://chrome.google.com/webstore/detail/audiopick/gfhcppdamigjkficnjnhmnljljhagaha?hl=en)を使うとよい
+
 https://qiita.com/propella/items/4699eda71cd742cba8d3
 
 
