@@ -296,6 +296,17 @@ docker-compose up -d
 
 ## TroubleShooting
 
+### docker execするとターミナルのサイズがおかしい
+
+表示されるターミナルサイズが小さくなってしまう。ウィンドウリサイズで直るがリサイズがめんどくさいときに
+
+`docker exec -it -e COLUMNS=`tput cols` -e LINES=`tput lines xxx /bin/bash` 
+
+docker v18.06では直ってるらしい
+
+https://github.com/moby/moby/issues/33794
+
+
 ### 共有ディレクトリでPermission Deniedになる
 
 SELinuxが原因
