@@ -56,11 +56,34 @@ http://so-zou.jp/web-app/tech/database/sqlite/data/data-type.htm
 
 ## PostgreSQL
 
+### よく使うSQL
+
+#### CSVにする
+
+`psql TESTDB -c "COPY (select * from foo) TO '/tmp/aaa.csv' (FORMAT csv)"`
+
+#### バイナリをlike検索
+
+`select * from binary where data::varchar like '%010203%';`
+
+#### ページャーを変更
+
+シェルで
+
+`export PAGER=less`
+
+#### ページャーを使わない
+
+\pset pager off
+
+
 #### キャラクタ型を整数に変換する方法
 
 ~~~
 ALTER TABLE cps_def ALTER COLUMN no_imaging_flag TYPE integer USING (no_imaging_flag::integer);
 ~~~
+
+
 
 ## MySQL
 
