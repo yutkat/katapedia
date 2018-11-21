@@ -60,7 +60,7 @@ http://so-zou.jp/web-app/tech/database/sqlite/data/data-type.htm
 
 #### CSVにする
 
-`psql TESTDB -c "COPY (select * from foo) TO '/tmp/aaa.csv' (FORMAT csv)"`
+`COPY (select * from foo) TO '/tmp/aaa.csv' (FORMAT csv);`
 
 #### バイナリをlike検索
 
