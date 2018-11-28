@@ -1,5 +1,9 @@
 # GitHub
 
+## GitHubの人気ランキング
+
+https://octoverse.github.com/
+
 ## 人気のある・参考になるリポジトリ
 
 https://github.com/docker/docker
