@@ -647,6 +647,13 @@ http://www.file-extensions.org/filetype/extension/name/program-executable-files
 
 http://pcsupport.about.com/od/tipstricks/a/execfileext.htm
 
+---
+
+## systemd
+
+### 特殊変数一覧
+
+https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Specifiers
 
 
 ---
