@@ -149,6 +149,12 @@ echo "$HOME/local/bin/tmux is now available. You can optionally add $HOME/local/
 
 ## TroubleShooting
 
+### attachしたときに表示サイズがおかしくなるので再描画したい
+
+`tmux attach -d`で解決する
+
+https://stackoverflow.com/questions/7814612/is-there-any-way-to-redraw-tmux-window-when-switching-smaller-monitor-to-bigger
+
 ### 色がおかしい
 
 tmux -2で起動するか、echo $TERMで256colorがついていることを確認する
