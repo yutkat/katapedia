@@ -173,7 +173,6 @@ post-commitに実行権限を付けることを忘れないこと！！
 * 出力したファイルの内容をジョブのトップ画面に表示するプラグイン
 -> https://github.com/jenkinsci/description-setter-plugin
 
-* ncmeter用プラグイン
 
 ## Tips
 
