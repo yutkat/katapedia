@@ -1,5 +1,9 @@
 # CC++
 
+## Effective C++
+
+- https://herbsutter.com/elements-of-modern-c-style/
+
 ## 共通
 
 ### [Makefile](Makefile.md)
