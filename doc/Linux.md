@@ -1184,6 +1184,11 @@ http://www.server-world.info/query?os=CentOS_7&p=japanese
 `sudo yum install gtk2-immodule-xim`
 
 
+#### Firefoxでflash playerを使う
+
+1. flash playerのlinux用tar.gzをダウンロード解凍する
+2. cp libflashplayer.so ~/.mozilla/plugins/
+ 
 #### Ubuntuでalt+tabが無効にできない
 
 Open dconf-editor
