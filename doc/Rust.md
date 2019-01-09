@@ -9,6 +9,10 @@
 - https://doc.rust-lang.org/beta/std/index.html
 - https://sinkuu.github.io/api-guidelines/
 
+Cookbook
+
+- https://rust-lang-nursery.github.io/rust-cookbook/intro.html
+
 ## 必須ツール
 
 - rls(LSP)
