@@ -199,6 +199,20 @@ http://algo13.net/clang/clang-format-style-oputions.html
 https://heavywatal.github.io/cxx/speed.html
 
 
+## カバレッジ
+
+### CMakeでカバレッジ
+
+コンパイルオプションを変更
+
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -Wall --coverage")
+
+プロジェクトルートにファイルを持ってこないとうまくいかなかった
+
+`find build -type f \( -iname \*.gcno -or -iname \*.gcda \) -exec cp {} . \;`
+`gcovr -r .`
+
+
 ## Tips
 
 ### gccバージョンごとの対応C++機能
