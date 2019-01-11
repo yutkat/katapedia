@@ -1,8 +1,10 @@
 # CC++
 
-## Effective C++
+## 必読
 
-- https://herbsutter.com/elements-of-modern-c-style/
+- Effective C++ https://herbsutter.com/elements-of-modern-c-style/
+
+- awesome cpp https://awesomecpp.com/
 
 ## 共通
 
