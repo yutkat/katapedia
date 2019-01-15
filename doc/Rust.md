@@ -21,6 +21,16 @@ Cookbook
 
 https://www.rust-lang.org/tools
 
+## 代表的なプロダクト
+
+- https://github.com/rust-lang/cargo
+- https://github.com/BurntSushi/ripgrep
+- https://github.com/jwilm/alacritty
+- https://github.com/ogham/exa
+- https://github.com/sharkdp/fd
+- https://github.com/sharkdp/bat
+- https://github.com/xi-editor/xi-editor
+
 ## デバッグ
 
 ### lldb
