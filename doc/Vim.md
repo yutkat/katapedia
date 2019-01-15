@@ -1078,6 +1078,13 @@ sudo apt-get install vim-gnome
 
 ## TroubleShooting
 
+### neovimでmarkをdelmarkしても開き直したら復活する
+
+`wshada!`
+で直る模様。。。
+
+https://github.com/neovim/neovim/issues/4288#issuecomment-186076052
+
 
 ### quickrunのパッチ
 
