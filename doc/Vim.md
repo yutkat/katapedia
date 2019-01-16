@@ -15,6 +15,11 @@ http://haya14busa.com/vim-mnemonic/
 
 http://www3.kcn.ne.jp/~okina/vim_blank.html
 
+### Quickfixの過去履歴を表示
+
+- `chi`
+- 戻るとき: `col`
+
 ### カーソル下の単語削除
 
 daw	カーソル位置の単語を削除(空白含む) (d + a word)
