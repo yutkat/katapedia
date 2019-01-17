@@ -39,6 +39,13 @@ https://www.rust-lang.org/tools
 
 `type lookup xxx`
 
+## TroubleShooting
+
+### テストを書いたのに実行されない
+
+{module-name}.rs or mod.rsにpub mod xxxの記述がないため実行ファイルからテストが呼び出せないことが原因。追加すること。
+
+
 
 ## 参考サイト
 
