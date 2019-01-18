@@ -44,6 +44,14 @@ https://www.rust-lang.org/tools
 
 `type lookup xxx`
 
+## 仕様
+
+### 借用と参照と関数の引数の関係
+
+https://qiita.com/yz2cm/items/9a8337c368cf055b4255#%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E3%81%A8
+
+
+
 ## TroubleShooting
 
 ### テストを書いたのに実行されない
