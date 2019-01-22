@@ -1033,6 +1033,12 @@ mapは他で変更していた場合は変更されたあとの設定となる�
 
 http://cocopon.me/blog/?p=3871
 
+### mapによくある<C-u>
+ 
+ 範囲選択<,'>を消しているらしい
+ 
+ https://vim-jp.org/vimdoc-ja/map.html#omap-info
+
 
 ### vim-clangでウィンドウが勝手に閉じる
 
