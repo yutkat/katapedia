@@ -15,6 +15,23 @@
 - テストコードで呼び出しているメソッドへ移動する	メソッドにカーソルをあわせてCtrl+alt+B
 - 最後に実行したテストの再実行	(どこでも)Ctrl+R
 
+## プラグイン
+
+### 必須
+
+- IdeaVim
+- AceJump
+- TabMover
+- KeyPromoterX
+- Sticky Selection
+- File Watcher
+
+### C++
+
+- MoreUnit
+- Rust
+- Clion-cpplint
+
 
 ## Tips
 
@@ -50,4 +67,17 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 
 を追加する
+
+
+## TroubleShooting
+
+### Generateしたときに画面が固まる
+
+save action pluginがおかしい模様。アンインストールしたら直った
+
+Help->Show log fileでなにがおかしいかわかる。
+
+
+
+
 
