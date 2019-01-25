@@ -77,6 +77,17 @@ save action pluginがおかしい模様。アンインストールしたら直�
 
 Help->Show log fileでなにがおかしいかわかる。
 
+### Linuxでi3wmを使うとうまくウィンドウにフォーカスしない
+
+~/.xxx/config/idea.properties
+に
+
+```
+suppress.focus.stealing=false
+focus.follows.mouse.workarounds=true
+#idea.popup.weight=medium
+#actionSystem.xWindow.remove.focus.from.nonFocusable.popups=false
+```
 
 
 
