@@ -79,7 +79,7 @@ Help->Show log fileでなにがおかしいかわかる。
 
 ### Linuxでi3wmを使うとうまくウィンドウにフォーカスしない
 
-~/.xxx/config/idea.properties
+~/.xxx/config/idea.properties (Help->Edit Custom Properties)
 に
 
 ```
