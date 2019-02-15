@@ -16,6 +16,27 @@
 
 - awesome cpp https://awesomecpp.com/
 
+## ヘッダー
+
+### 宣言順
+
+typedef
+static定数
+static変数
+static関数
+メンバ変数
+コンストラクタ
+デフォルトコンストラクタ
+コピーコンストラクタ
+その他のコンストラクタ
+デストラクタ
+メンバ関数
+内部クラス・構造体
+
+
+https://www.10106.net/~hoboaki/wiki/index.php?C%2B%2B%2F%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E8%A6%8F%E5%89%87
+
+
 ## 共通
 
 ### [Makefile](Makefile.md)
