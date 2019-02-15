@@ -1,5 +1,15 @@
 # CC++
 
+新しくC/C++を使って書くならRustで書くことを検討したほうがいい
+
+*理由*
+
+- モダン
+- 安全
+- 周辺ツールが標準で組み込まれている
+- コンパイルエラーが人にやさしい
+
+
 ## 必読
 
 - Effective C++ https://herbsutter.com/elements-of-modern-c-style/
