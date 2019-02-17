@@ -250,7 +250,19 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -Wall --coverage")
 
 ### google testでprotected関数をテストする
 
+#### その1
+
 https://stackoverflow.com/questions/26337123/testing-protected-member-with-googletest
+
+#### その2
+
+
+``` c
+class B : public A {
+ public:
+  using A::target_variable_or_function;
+};
+```
 
 
 ### gccバージョンごとの対応C++機能
