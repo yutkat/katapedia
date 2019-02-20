@@ -332,6 +332,13 @@ https://stackoverflow.com/questions/1759587/un-submodule-a-git-submodule
 
 ## Tips
 
+### 一部のファイルのみをstashする
+
+stashしないファイルをgit addする
+`git stash -k`
+`git reset` # ステージからもとに戻す
+
+
 ### ノンパスワード設定
 
 ssh-keygen -t rsa -C "your.email@example.com" -b 4096
