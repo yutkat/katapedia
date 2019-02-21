@@ -14,3 +14,7 @@ viで記述する方法
 
 Ctrl+v u 0259
 
+### ここもいい
+
+https://emojipedia.org/lightning-mood/
+
