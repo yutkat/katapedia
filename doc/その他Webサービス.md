@@ -18,3 +18,6 @@ Ctrl+v u 0259
 
 https://emojipedia.org/lightning-mood/
 
+### 黒い絵文字
+
+https://enfascination.com/weblog/post/1809#.XG5SLnUzYUF
