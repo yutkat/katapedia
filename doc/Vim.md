@@ -15,6 +15,14 @@ http://haya14busa.com/vim-mnemonic/
 
 http://www3.kcn.ne.jp/~okina/vim_blank.html
 
+### surroundで複数行囲む
+
+1. Shift + v
+2. :normal yss' ('で囲むとき)
+
+インデントがあるとうまく行かないので一度左に詰めるようにする
+
+
 ### Quickfixの過去履歴を表示
 
 - `chi`
