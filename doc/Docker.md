@@ -339,6 +339,14 @@ https://github.com/docker/docker/issues/20486
 
 ## Tips
 
+### コンテナ内のプロセスで使っている設定ファイルを一時的に変更したい
+
+1. `docker-compose xxx-service /bin/bash`
+2. `vim /path/to/config`
+3. `docker-compose restart xxx-service`
+4. `docker-compose logs xxx-service`
+
+
 ### ログインした先がdockerかどうか調べる
 
 一番はやいのは `/.dockerenv`の有無を調べること
