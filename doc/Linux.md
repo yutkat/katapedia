@@ -360,6 +360,15 @@ WantedBy=sleep.target
 
 ---
 
+## プリンタ
+
+### プリンタ設定
+
+http://localhost:631
+
+
+---
+
 
 ## Hack
 
