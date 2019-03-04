@@ -92,6 +92,10 @@ ALTER TABLE cps_def ALTER COLUMN no_imaging_flag TYPE integer USING (no_imaging_
 
 https://stackoverflow.com/questions/42367917/postgres-add-description-of-an-enum-value
 
+### ひとつ前のレコードの前回値を取得する
+
+https://blog-asnpce.com/technology/1345
+
 
 ## MySQL
 
