@@ -83,6 +83,14 @@ http://so-zou.jp/web-app/tech/database/sqlite/data/data-type.htm
 ALTER TABLE cps_def ALTER COLUMN no_imaging_flag TYPE integer USING (no_imaging_flag::integer);
 ~~~
 
+### Tips
+
+#### enumにコメントをつけたい
+
+各項目にはつけられないみたいなのでenum自体に列挙する
+`CREATE TYPE my_type_description AS ENUM('foo desc', 'bar desc');`
+
+https://stackoverflow.com/questions/42367917/postgres-add-description-of-an-enum-value
 
 
 ## MySQL
