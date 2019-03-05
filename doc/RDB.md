@@ -96,6 +96,14 @@ https://stackoverflow.com/questions/42367917/postgres-add-description-of-an-enum
 
 https://blog-asnpce.com/technology/1345
 
+### ORDER BYでnull値を除外する
+
+`WHERE target_column IS NOT NULL ORDER BY target_column`
+
+target_columnに別名をつけているの場合はWHEREできないので
+
+`ORDER BY target_column desc NULLS LAST`
+
 
 ## MySQL
 
