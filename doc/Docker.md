@@ -278,6 +278,17 @@ EXPOSE 22
 `sudo docker run  -v /var/docker/share:/share -w /share  -itd -p 22 bpos/l1dev:v0.01 /usr/sbin/sshd -D`
 
 
+## 各ディストリビューションのdockerfile
+
+### Alpine
+
+#### ユーザー追加
+
+useraddが使えないのでadduserを使う
+
+`RUN addgroup -g 1018 group-name && adduser -u 1016 -G group-name -D user-name&& echo "user-name ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && echo 'password:password' | chpasswd`
+
+
 ## docker-compose
 
 ### インストール
