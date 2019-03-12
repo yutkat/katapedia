@@ -339,6 +339,17 @@ https://github.com/docker/docker/issues/20486
 
 ## Tips
 
+### daemonみたいにコンテナを起動しっぱなしにしたい
+
+exec -itで入って作業するときとかに
+
+`docker run -td xxx /bin/bash`
+`docker exec -it yyy /bin/bash`
+
+
+https://stackoverflow.com/questions/25775266/how-to-keep-docker-container-running-after-starting-services
+
+
 ### コンテナ内のプロセスで使っている設定ファイルを一時的に変更したい
 
 1. `docker-compose xxx-service /bin/bash`
