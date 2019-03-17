@@ -2,6 +2,7 @@
 
 ## awesome python
 
+https://github.com/vinta/awesome-python
 https://qiita.com/hatai/items/34c91d4ee0b54bd7cb8b
 
 ## お作法
