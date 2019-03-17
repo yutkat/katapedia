@@ -877,6 +877,24 @@ https://isocpp.org/wiki/faq/const-correctness#constptrptr-conversion
 
 ## FAQ
 
+### std::hexを使って16進表示にしたあとも16進表示のままになる
+
+``` cpp
+void printHex(std::ostream& x) {
+   ios::fmtflags f(x.flags());
+   x << std::hex << 123 << "\n";
+   x.flags(f);
+}
+
+int main() {
+    std::cout << 100 << "\n"; // prints 100 base 10
+    printHex(std::cout);      // prints 123 in hex
+    std::cout << 73 << "\n";  // problem! prints 73 in hex..
+}
+```
+
+https://stackoverflow.com/questions/2273330/restore-the-state-of-stdcout-after-manipulating-it
+
 ### テンプレートを使って実装とヘッダを分けた場合にリンクエラーとなる
 
 テンプレートメンバ関数をpublicで作った際に起こりがち
