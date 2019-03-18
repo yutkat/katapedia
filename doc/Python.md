@@ -21,6 +21,7 @@ https://qiita.com/hatai/items/34c91d4ee0b54bd7cb8b
 
 importの時には動作しないようにする
 
+
 ### 命名規則
 
 | 対象              |ルール                                  | 例                   |
@@ -40,3 +41,18 @@ https://qiita.com/naomi7325/items/4eb1d2a40277361e898b
 ディレクトリとファイルの名前に複数形は使わない
 
 https://pypyja.readthedocs.io/en/latest/coding-guide.html#id30
+
+
+
+## ロギング
+
+```python
+from logging import getLogger, StreamHandler, DEBUG
+logger = getLogger(__name__)
+logger.debug('hello')
+```
+
+
+https://qiita.com/amedama/items/b856b2f30c2f38665701
+
+
