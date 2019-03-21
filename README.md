@@ -158,7 +158,7 @@
 
 ## [Eclipse](./doc/Eclipse.md)
 
-## [IntelliJ IDEA](./doc/IntelliJ_IDEA.md)
+## [JetBrains IDE](./doc/JetBrains_IDE.md)
 
 ## [SVN](./doc/SVN.md)
 

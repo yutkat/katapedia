@@ -1,3 +1,6 @@
+# JetBrains IDEA
+
+
 # IntelliJ IDEA
 
 ## ショートカット
@@ -84,11 +87,29 @@ Help->Show log fileでなにがおかしいかわかる。
 
 ```
 suppress.focus.stealing=false
-focus.follows.mouse.workarounds=true
+#focus.follows.mouse.workarounds=true
 #idea.popup.weight=medium
 #actionSystem.xWindow.remove.focus.from.nonFocusable.popups=false
 ```
 
+
+# CLion
+
+## やりたいけどできないこと
+
+2019/03/21 時点でやりたいけどできない動作
+
+- 新規クラス作成したときのディレクトリとネームスペースの同期
+- テストクラスの自動生成
+
+
+# Pycharm
+
+## Tips
+
+### ideavimのEscの効きが悪い
+
+https://qiita.com/sifue/items/471ac01f413baf7b46a1
 
 
 
