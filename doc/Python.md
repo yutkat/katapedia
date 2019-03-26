@@ -77,6 +77,14 @@ https://qiita.com/amedama/items/b856b2f30c2f38665701
 
 ## setup.cfg
 
+### 各項目の説明
+
 https://python-packaging-user-guide-ja.readthedocs.io/ja/latest/distributing.html#setup-cfg
 
+### find_packageする
+
+```
+[options]
+packages = find:
+```
 
