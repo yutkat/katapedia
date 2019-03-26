@@ -5,6 +5,24 @@
 https://github.com/vinta/awesome-python
 https://qiita.com/hatai/items/34c91d4ee0b54bd7cb8b
 
+
+## ボイラープレート
+
+https://github.com/ikasat/python-boilerplate/tree/v2.0.0
+https://techblog.asahi-net.co.jp/entry/2018/11/19/103455
+これがまとまっててよい。
+
+setup.pyはsetup.cfgに記載するのでよいと思う。
+
+setup.pyはこれだけでいい
+
+```python
+from setuptools import setup
+
+setup()
+```
+
+
 ## お作法
 
 ### 先頭行に書くこと
@@ -54,5 +72,11 @@ logger.debug('hello')
 
 
 https://qiita.com/amedama/items/b856b2f30c2f38665701
+
+
+
+## setup.cfg
+
+https://python-packaging-user-guide-ja.readthedocs.io/ja/latest/distributing.html#setup-cfg
 
 
