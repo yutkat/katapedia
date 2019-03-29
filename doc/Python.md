@@ -1,5 +1,9 @@
 # Python
 
+## 中級者向けの読み物
+
+https://python.ms/
+
 ## awesome python
 
 https://github.com/vinta/awesome-python
