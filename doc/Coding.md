@@ -422,6 +422,7 @@ http://d.hatena.ne.jp/makotan/20081107#p3
 
 ## 例外
 
+
 業務エラーでは、例外を利用してはいけない。
 
 https://blogs.msdn.microsoft.com/nakama/2008/12/29/net-part-1/
@@ -434,6 +435,16 @@ http://d.hatena.ne.jp/kmaebashi/20100114/p1
 http://d.hatena.ne.jp/licheng/20130608/p1
 
 http://blog.shin1x1.com/entry/application-throws-exception-or-not
+
+### エラーの分類
+
+https://qiita.com/koher/items/a7a12e7e18d2bb7d8c77
+
+### Swiftのいけてる例外機構
+
+https://qiita.com/omochimetaru/items/c30f7a021fb9b8f0fa92
+
+
 
 ## ログ
 
