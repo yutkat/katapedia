@@ -65,6 +65,10 @@ https://qiita.com/naomi7325/items/4eb1d2a40277361e898b
 https://pypyja.readthedocs.io/en/latest/coding-guide.html#id30
 
 
+### import
+
+つべこべ言わず絶対パスで書くべき
+
 
 ## ロギング
 
