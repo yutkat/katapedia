@@ -304,7 +304,7 @@ http://www.ne.jp/asahi/hishidama/home/tech/lang/symbol.html
 * ヘルプ?（Help）
 * 動作確認マシン（Testing Environments）
 * 既知の不具合（Bugs）
-* 注意事項（Notices）
+* 注意事項（Notices/Notes）
 * FAQ（FAQ,Troubleshooting）
 * 更新履歴（Relese Notes）
 * 謝辞（Acknowledgements、THANKS）
