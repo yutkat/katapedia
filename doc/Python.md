@@ -96,3 +96,19 @@ https://python-packaging-user-guide-ja.readthedocs.io/ja/latest/distributing.htm
 packages = find:
 ```
 
+
+## Tips
+
+### 文字コードとasciiの変換
+
+word -> ascii
+
+`hex(ord('r'))`
+
+ascii -> word
+
+`chr(0x72)`
+
+
+
+
