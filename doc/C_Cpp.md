@@ -877,6 +877,11 @@ https://isocpp.org/wiki/faq/const-correctness#constptrptr-conversion
 
 ## FAQ
 
+### クラスと構造体の選択
+
+https://docs.microsoft.com/ja-jp/dotnet/standard/design-guidelines/choosing-between-class-and-struct
+
+
 ### std::hexを使って16進表示にしたあとも16進表示のままになる
 
 ``` cpp
