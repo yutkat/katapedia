@@ -36,6 +36,30 @@ https://www.rust-lang.org/tools
 - https://github.com/sharkdp/bat
 - https://github.com/xi-editor/xi-editor
 
+## 基本
+
+### ファイル分割
+
+https://keens.github.io/blog/2018/12/08/rustnomoju_runotsukaikata_2018_editionhan/
+
+### テストコード
+
+単体テストコードはソースコードの中に書く。modでくくる
+
+``` rust
+#[cfg(test)]
+mod tests {
+    use super::add_two;
+
+    #[test]
+    fn it_works() {
+        assert_eq!(4, add_two(2));
+    }
+}
+```
+
+結合テストは`tests/`ディレクトリに格納する
+
 ## デバッグ
 
 ### lldb
