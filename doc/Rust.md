@@ -51,6 +51,17 @@ https://www.rust-lang.org/tools
 https://qiita.com/yz2cm/items/9a8337c368cf055b4255#%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E3%81%A8
 
 
+## Tips
+
+### テストデータの置き場をプロジェクトルートからの相対パスで取得する方法
+
+``` rust
+let mut d = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
+d.push("resources/test");
+```
+
+https://stackoverflow.com/questions/30003921/locating-resources-for-testing-with-cargo
+
 
 ## TroubleShooting
 
