@@ -60,6 +60,11 @@ mod tests {
 
 結合テストは`tests/`ディレクトリに格納する
 
+#### テストデータの置き場
+
+rlsはtests/fixtures/に置いてる模様
+
+
 ## デバッグ
 
 ### lldb
