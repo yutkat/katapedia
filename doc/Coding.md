@@ -267,11 +267,20 @@ https://ferret-plus.com/4680
 
 https://findy.jp/15270
 
-
-
 ### [関数命名規約](関数命名規約.md)
 
 ### [関数名でよく使われる英単語](関数名でよく使われる英単語.md)
+
+### Tips
+
+#### prefixとsuffix
+
+suffixを使うことにする
+
+MINIMUM_APPLE_COUNT (replace with APPLE_COUNT_MINIMUM).
+
+https://hilton.org.uk/presentations/naming-guidelines
+
 
 ## [Doxygenコメント規約](Doxygenコメント規約.md)
 
