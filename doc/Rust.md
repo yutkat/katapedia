@@ -62,8 +62,9 @@ mod tests {
 
 #### テストデータの置き場
 
-rlsはtests/fixtures/に置いてる模様
-
+- rlsはtests/fixtures/に置いてる模様
+- ripgrepはtests/data
+- testdata派もいるみたい
 
 ## デバッグ
 
