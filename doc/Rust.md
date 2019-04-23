@@ -38,6 +38,10 @@ https://www.rust-lang.org/tools
 
 ## 基本
 
+### リファクタリング
+
+https://doc.rust-jp.rs/book/second-edition/ch12-03-improving-error-handling-and-modularity.html
+
 ### ファイル分割
 
 https://keens.github.io/blog/2018/12/08/rustnomoju_runotsukaikata_2018_editionhan/
