@@ -87,6 +87,17 @@ https://qiita.com/yz2cm/items/9a8337c368cf055b4255#%E3%81%BE%E3%81%A8%E3%82%81%E
 
 ## Tips
 
+## serdeで項目名を変更したい
+
+``` rust
+#[serde(rename = "pos[0]")]
+pos_0: Option<f64>,
+```
+
+をフィールドにつけてリネームする
+
+https://serde.rs/container-attrs.html
+
 ### テストデータの置き場をプロジェクトルートからの相対パスで取得する方法
 
 ``` rust
