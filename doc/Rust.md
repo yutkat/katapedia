@@ -84,6 +84,13 @@ mod tests {
 
 https://qiita.com/yz2cm/items/9a8337c368cf055b4255#%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B%E3%81%A8
 
+## CI
+
+### CIでやること
+
+https://github.com/sagiegurari/cargo-make
+
+
 
 ## Tips
 
