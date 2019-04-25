@@ -94,7 +94,13 @@ https://github.com/sagiegurari/cargo-make
 
 ## Tips
 
-## serdeで項目名を変更したい
+### coverageを表示したい
+
+``` bash
+cat target/coverage/kcov-merged/coverage.json | jq -r '[.percent_covered, .covered_lines, .total_lines] | @sh' |    tr -d \' | awk '{ printf "coverage: %s%% (%d / %d)\n", $1, $2, $3 }'
+```
+
+### serdeで項目名を変更したい
 
 ``` rust
 #[serde(rename = "pos[0]")]
