@@ -96,6 +96,15 @@ https://python-packaging-user-guide-ja.readthedocs.io/ja/latest/distributing.htm
 packages = find:
 ```
 
+## CI
+
+### CIでやるべきこと
+
+```
+ - pipenv run vet
+ - pipenv run pytest
+ - pipenv run pytest -v --cov=operation_reporter
+```
 
 ## Tips
 
