@@ -38,6 +38,13 @@ https://www.rust-lang.org/tools
 
 ## 基本
 
+### 文字列
+
+### 関数の引数の入出力
+
+入力は`&str`、出力は`String`がよい気がする
+
+
 ### リファクタリング
 
 https://doc.rust-jp.rs/book/second-edition/ch12-03-improving-error-handling-and-modularity.html
