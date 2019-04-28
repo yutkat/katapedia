@@ -42,7 +42,7 @@ https://www.rust-lang.org/tools
 
 ### 関数の引数の入出力
 
-入力は`&str`、出力は`String`がよい気がする
+入力は`&str`(がんばるなら<S: Into<String>>(s: S)がいい)、出力は`String`がよい気がする
 
 
 ### リファクタリング
