@@ -131,6 +131,17 @@ pos_0: Option<f64>,
 
 https://serde.rs/container-attrs.html
 
+### serdeでシリアライズとデシリアライズの名称を変えたい
+
+```rust
+struct Joeybloggs {
+    #[serde(rename(deserialize = "old", serialize = "new"))]
+    field: i32,
+}
+```
+
+https://github.com/serde-rs/serde/issues/1320
+
 ### テストデータの置き場をプロジェクトルートからの相対パスで取得する方法
 
 ``` rust
