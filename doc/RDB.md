@@ -83,6 +83,11 @@ http://so-zou.jp/web-app/tech/database/sqlite/data/data-type.htm
 ALTER TABLE cps_def ALTER COLUMN no_imaging_flag TYPE integer USING (no_imaging_flag::integer);
 ~~~
 
+### DB内全消去
+
+`drop schema public cascade; create schema public;`
+
+
 ### Tips
 
 #### enumにコメントをつけたい
