@@ -1047,6 +1047,12 @@ libexec: 内部から呼び出される実行ファイル
 
 ## FAQ
 
+#### xdg-openのデフォルトを変更したい
+
+`xdg-mime query default text/html`
+`xdg-settings set default-web-browser chromium.desktop`
+
+
 #### Windows10が入っているUEFIでLinuxに書き換えると時々起動せず、回復コンソールが立ち上がる
 
 * Windows情報を削除
