@@ -144,6 +144,15 @@ directory ディレクトリ名
 
 単数形になっているところに注意する。
 
+#### リモートデバッグ
+
+##### 直接ポートが解放できない環境でリモートデバッグする
+
+1. install gdb gdb-gdbserver
+2. `gdbserver --multi localhost:9999 <progname>`
+3. ローカルフォワードする　`ssh -L 9999:localhost:9999 remote-server`
+4. gdb
+5. (gdb) target remote localhost:9999
 
 ### valgrind
 
