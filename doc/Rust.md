@@ -101,6 +101,13 @@ https://github.com/sagiegurari/cargo-make
 
 ## Tips
 
+### info!,debug!をユニットテストでも出力させたい
+
+env_loggerを使って、
+`let _ = env_logger::builder().is_test(true).try_init();`
+をsetupかなにかで毎回実行させる
+
+
 ### coverageを表示したい
 
 ``` bash
