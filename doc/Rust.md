@@ -101,6 +101,14 @@ https://github.com/sagiegurari/cargo-make
 
 ## Tips
 
+### StringをErrorに変換したい(the trait bound `&str: std::error::Error` is not satisfied)
+
+format_err!()マクロを使う
+
+### OptionalをResultに変換したい
+
+ok_orを使う
+
 ### info!,debug!をユニットテストでも出力させたい
 
 env_loggerを使って、
