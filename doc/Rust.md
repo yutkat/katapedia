@@ -101,6 +101,20 @@ https://github.com/sagiegurari/cargo-make
 
 ## Tips
 
+### ファイルの更新日時が最新のものを取得する
+
+``` rust
+let new_generated = glob(&*glob_pattern)
+    .expect("Failed to read glob pattern")
+    .max_by_key(|path| {
+        fs::metadata(path.as_ref().unwrap())
+            .unwrap()
+            .modified()
+            .unwrap()
+    })
+    .unwrap()?;
+```
+
 ### StringをErrorに変換したい(the trait bound `&str: std::error::Error` is not satisfied)
 
 format_err!()マクロを使う
