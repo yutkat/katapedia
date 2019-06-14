@@ -40,6 +40,11 @@ https://www.rust-lang.org/tools
 
 ### 文字列
 
+#### formatの指定の仕方
+
+https://qiita.com/YusukeHosonuma/items/13142ab1518ccab425f4
+
+
 ### 関数の引数の入出力
 
 入力は`&str`(がんばるなら<S: Into<String>>(s: S)がいい)、出力は`String`がよい気がする
@@ -52,6 +57,15 @@ https://doc.rust-jp.rs/book/second-edition/ch12-03-improving-error-handling-and-
 ### ファイル分割
 
 https://keens.github.io/blog/2018/12/08/rustnomoju_runotsukaikata_2018_editionhan/
+
+### OptionとResultの使い方
+
+https://qiita.com/tatsuya6502/items/cd41599291e2e5f38a4a
+
+### イテレータ
+
+https://qiita.com/lo48576/items/34887794c146042aebf1
+
 
 ### テストコード
 
@@ -100,6 +114,10 @@ https://github.com/sagiegurari/cargo-make
 
 
 ## Tips
+
+### 文字列で0パディングする
+
+https://stackoverflow.com/questions/50458144/what-is-the-easiest-way-to-pad-a-string-with-0-to-the-left
 
 ### ファイルの更新日時が最新のものを取得する
 
