@@ -44,6 +44,13 @@ https://www.rust-lang.org/tools
 
 https://qiita.com/YusukeHosonuma/items/13142ab1518ccab425f4
 
+#### formatでn文字ぴったりにする
+
+7文字制限だと
+
+``` rust
+format!("{:0>7.7}", string);
+```
 
 ### 関数の引数の入出力
 
