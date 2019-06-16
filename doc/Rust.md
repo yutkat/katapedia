@@ -128,6 +128,14 @@ https://github.com/sagiegurari/cargo-make
 
 ## Tips
 
+### ワイルドカード(glob)でファイルを消す
+
+``` rust
+let _ = glob(glob_pattern)
+    .expect("Failed to read glob pattern")
+    .for_each(|path| fs::remove_file(path.as_ref().unwrap()).unwrap());
+```
+
 ### 文字列で0パディングする
 
 https://stackoverflow.com/questions/50458144/what-is-the-easiest-way-to-pad-a-string-with-0-to-the-left
