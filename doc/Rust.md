@@ -128,6 +128,25 @@ https://github.com/sagiegurari/cargo-make
 
 ## Tips
 
+### mainで早期リターン
+
+1.26からはmainで?が使えるのでそれを使ったほうがいい。
+
+https://blog.rust-lang.org/2018/05/10/Rust-1.26.html
+
+``` rust
+use std::fs;
+
+fn main() -> Result<(), std::io::Error> {
+    let _ = fs::File::create("bar.txt");
+    let _ = if let Ok(val) = fs::File::open("bar.txt") { val } else { println!("aaaa"); return Ok(())};
+    println!("bbbb");
+    Ok(())
+}
+```
+
+https://www.reddit.com/r/rust/comments/6c3gjr/early_return_and_if_let/
+
 ### ワイルドカード(glob)でファイルを消す
 
 ``` rust
