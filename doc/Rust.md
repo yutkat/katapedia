@@ -125,6 +125,17 @@ https://github.com/rust-lang/rfcs/issues/1362
 https://github.com/sagiegurari/cargo-make
 
 
+## よく使うcrate
+
+### clap
+
+引数処理
+
+#### 特定の値だけを許容してenumに突っ込みたい
+
+possible_valuesを使ってfrom_strで変換するのがよさげ
+
+https://yuk1tyd.hatenablog.com/entry/2018/03/21/225533
 
 ## Tips
 
