@@ -154,6 +154,15 @@ directory ディレクトリ名
 4. gdb
 5. (gdb) target remote localhost:9999
 
+#### デバッグオプションがついているか調べる
+
+objdump --syms
+
+シンボルが表示されるかどうか。No symbolsだとついていない
+
+https://stackoverflow.com/questions/3284112/how-to-check-if-program-was-compiled-with-debug-symbols
+
+
 ### valgrind
 
 ~~~
