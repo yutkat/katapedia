@@ -162,6 +162,9 @@ objdump --syms
 
 https://stackoverflow.com/questions/3284112/how-to-check-if-program-was-compiled-with-debug-symbols
 
+ただしgdb上で確認したほうが確実(Readができない場合があるため)
+(gdb) info sharedlibrary
+
 
 ### valgrind
 
