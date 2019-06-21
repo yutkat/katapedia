@@ -139,6 +139,12 @@ https://yuk1tyd.hatenablog.com/entry/2018/03/21/225533
 
 ## Tips
 
+### エラーメッセージでNo such file or directoryがどのファイルかわからない
+
+std::fsのエラーメッセージは貧弱なのでex(https://docs.rs/ex/0.1.3/ex/)を使うとよい模様
+
+https://www.reddit.com/r/rust/comments/bsn0zs/get_which_filename_is_not_found_on_rust_file/
+
 ### mainで早期リターン
 
 1.26からはmainで?が使えるのでそれを使ったほうがいい。
