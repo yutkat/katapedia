@@ -139,6 +139,11 @@ https://yuk1tyd.hatenablog.com/entry/2018/03/21/225533
 
 ## Tips
 
+### リポジトリが変更されたら強制的にbuild.rsを呼び出すようにする方法
+
+https://stackoverflow.com/questions/49077147/how-can-i-force-build-rs-to-run-again-without-cleaning-my-whole-project
+
+
 ### エラーメッセージでNo such file or directoryがどのファイルかわからない
 
 std::fsのエラーメッセージは貧弱なのでex(https://docs.rs/ex/0.1.3/ex/)を使うとよい模様
