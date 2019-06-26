@@ -139,6 +139,11 @@ https://yuk1tyd.hatenablog.com/entry/2018/03/21/225533
 
 ## Tips
 
+### build.rsでprintlnする
+
+`cargo build --verbose -vv`で表示できる。表示されないときはファイルを一部更新してもう一度実行してみる。
+
+
 ### リポジトリが変更されたら強制的にbuild.rsを呼び出すようにする方法
 
 https://stackoverflow.com/questions/49077147/how-can-i-force-build-rs-to-run-again-without-cleaning-my-whole-project
