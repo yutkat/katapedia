@@ -98,6 +98,17 @@ mod tests {
 - ripgrepはtests/data
 - testdata派もいるみたい
 
+## Cargo
+
+### Cargoで使える環境変数
+
+- RUSTUP_HOME: ~/.rustup
+- CARGO_HOME: ~/.cargo
+- OUT_DIR: ./target/debug/build/xxx-hashyyy/out
+
+https://doc.rust-lang.org/cargo/reference/environment-variables.html
+
+
 ## デバッグ
 
 ### lldb
@@ -138,6 +149,7 @@ possible_valuesを使ってfrom_strで変換するのがよさげ
 https://yuk1tyd.hatenablog.com/entry/2018/03/21/225533
 
 ## Tips
+
 
 ### build.rsでprintlnする
 
