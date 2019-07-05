@@ -431,6 +431,16 @@ find . | cpio -o -H newc | xz -9 –format=lzma > ../new-initrd.img
 
 ## Troubleshooting
 
+### なぜかシャットダウンできない
+
+poweroff とか haltとかでもシャットダウンできないときに強引にシャットダウンする
+
+```
+echo s > /proc/sysrq-trigger
+echo b > /proc/sysrq-trigger
+```
+
+
 ### 音が思った出力先から出ない
 
 思ったサウンドカードから音がでないときの対処
