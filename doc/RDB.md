@@ -66,6 +66,29 @@ http://so-zou.jp/web-app/tech/database/sqlite/data/data-type.htm
 
 `select * from binary where data::varchar like '%010203%';`
 
+#### Byteaを挿入
+
+普通にinsertすればよい
+
+```
+INSERT INTO table (data) VALUES (
+\x13070809'
+);
+```
+
+#### Select結果をinsert
+
+```
+INSERT INTO table(A, B, C, time)
+SELECT
+0,
+'aaa',
+COL_C,
+lag(time) OVER (ORDER BY time asc),
+FROM
+table2
+```
+
 #### ページャーを変更
 
 シェルで
