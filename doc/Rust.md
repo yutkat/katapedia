@@ -108,6 +108,16 @@ mod tests {
 
 https://doc.rust-lang.org/cargo/reference/environment-variables.html
 
+## テスト
+
+### Tips
+
+#### FixtureTest
+
+FixtureTestは2019/07/12現在サポートされていない。
+
+https://internals.rust-lang.org/t/pre-rfc-lightweight-test-fixtures/6605
+
 
 ## デバッグ
 
@@ -134,6 +144,12 @@ https://github.com/rust-lang/rfcs/issues/1362
 ### CIでやること
 
 https://github.com/sagiegurari/cargo-make
+
+## よく使う構文
+
+### 現在時刻取得
+
+`Utc::now().naive_utc()`
 
 
 ## よく使うcrate
