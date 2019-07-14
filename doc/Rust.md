@@ -166,6 +166,11 @@ https://yuk1tyd.hatenablog.com/entry/2018/03/21/225533
 
 ## Tips
 
+### unit testでプロジェクトルートを取得する
+
+``` rust
+let mut project_root = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
+```
 
 ### build.rsでprintlnする
 
