@@ -350,6 +350,30 @@ https://github.com/docker/docker/issues/20486
 
 ## Tips
 
+### Postgresとかをentrypointでpsqlを叩かないで実行する方法
+
+docker-composeにentrypointを設定
+
+```
+  psql-executor:
+    container_name: postgres
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres_pass
+      - POSTGRES_DB=test
+      - POSTGRES_HOST=test-db
+      - POSTGRES_PORT=5432
+    entrypoint: /bin/sh -c "PGPASSWORD=$$POSTGRES_PASSWORD psql -h $$POSTGRES_HOST -p $$POSTGRES_PORT -U $$POSTGRES_USER $$POSTGRES_DB -t -A"
+```
+
+```
+docker-compose run psql-executor < <(echo "$sql_command")
+```
+
+変数が展開されたりするのでテクニックが必要
+
+
 ### daemonみたいにコンテナを起動しっぱなしにしたい
 
 exec -itで入って作業するときとかに
