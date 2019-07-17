@@ -113,6 +113,10 @@ ALTER TABLE cps_def ALTER COLUMN no_imaging_flag TYPE integer USING (no_imaging_
 
 ### Tips
 
+### datetimeをtimeにキャストする方法
+
+cast("start_time" as time)
+
 ### 特定のカラムを対象として重複行を削除したい
 
 https://stackoverflow.com/questions/9795660/postgresql-distinct-on-with-different-order-by
