@@ -113,6 +113,14 @@ ALTER TABLE cps_def ALTER COLUMN no_imaging_flag TYPE integer USING (no_imaging_
 
 ### Tips
 
+### intervalから日数だけintegerで抜き出す
+
+`extract(day from '2019-07-22 10:00:00' - time)`
+
+### intervalから日数だけ抜き出す
+
+`date_trunc('days', '2019-07-22 10:00:00' - time)`
+
 ### datetimeをtimeにキャストする方法
 
 cast("start_time" as time)
