@@ -113,6 +113,12 @@ ALTER TABLE cps_def ALTER COLUMN no_imaging_flag TYPE integer USING (no_imaging_
 
 ### Tips
 
+### integerからdayに変換する
+
+かければいい
+
+`2 * interval '1 day'`
+
 ### intervalから日数だけintegerで抜き出す
 
 `extract(day from '2019-07-22 10:00:00' - time)`
