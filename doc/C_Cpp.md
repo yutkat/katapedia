@@ -269,6 +269,12 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -Wall --coverage")
 
 ## Tips
 
+### C++で型を変数にしてcastしたい
+
+できない
+
+https://stackoverflow.com/questions/4972795/how-do-i-typecast-with-type-info
+
 ### 型の情報を取得する
 
 typeidを使う
