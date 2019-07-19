@@ -95,6 +95,18 @@ suppress.focus.stealing=false
 
 # CLion
 
+## Tips
+
+### 外部ライブラリのソースをFilesなどの検索対象に入るようにする
+
+```
+    if (CMAKE_BUILD_TYPE STREQUAL Debug)
+        FILE(GLOB_RECURSE LIB_SRCS "/xxx/src/**/*.cpp" "/yyy/src/**/*.cpp")
+        list(APPEND PROJECT_SRCS ${LIB_SRCS})
+    endif()
+    ADD_EXECUTABLE(${EXECUTABLE_TARGET} ${PROJECT_SRCS})
+```
+
 ## やりたいけどできないこと
 
 2019/03/21 時点でやりたいけどできない動作
