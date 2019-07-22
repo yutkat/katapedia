@@ -287,7 +287,13 @@ PROMPT4='+%N:%i> ' # シェルスクリプトデバッグ時
 SPROMPT="%r is correct? [n,y,a,e]: " # 入力ミスの時に出る
 ~~~
 
+#### プロンプトをあれこれいじくり回したいときに参照するページ
 
+http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html
+
+#### 動的文字を挿入したい
+
+zle -R を使う
 
 
 ### oh-my-zsh
