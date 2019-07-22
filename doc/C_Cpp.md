@@ -223,6 +223,9 @@ http://blog.cybozu.io/entry/2016/09/15/100000
 
 `clang-format -i -style="{BasedOnStyle: Google, IndentWidth: 4, Standard: C++11}" source-file`
 
+ディレクトリ以下をFormat
+
+`find . -regex '.*\.\(cpp\|hpp\|cc\|cxx\)' -exec clang-format -style=file -i {} \;`
 
 オプション設定
 
