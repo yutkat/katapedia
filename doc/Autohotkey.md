@@ -67,6 +67,8 @@ return
 ^BS::
 Send, ^+{Left}{Delete}
 
+RWin::Send ^{Space}
+
 
 ~~~
 
