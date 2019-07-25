@@ -69,6 +69,8 @@ Send, ^+{Left}{Delete}
 
 RWin::Send ^{Space}
 
+Capslock::Ctrl
+sc03a::Ctrl
 
 ~~~
 
