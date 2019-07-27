@@ -166,6 +166,12 @@ https://yuk1tyd.hatenablog.com/entry/2018/03/21/225533
 
 ## Tips
 
+### lines()でreferenceが使えない
+
+by_ref()を使う
+
+https://stackoverflow.com/questions/39935158/cannot-use-moved-bufreader-after-for-loop-with-bufreader-lines
+
 ### unit testでプロジェクトルートを取得する
 
 ``` rust
