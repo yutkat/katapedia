@@ -82,6 +82,10 @@ Help->Show log fileでなにがおかしいかわかる。
 
 ### Linuxでi3wmを使うとうまくウィンドウにフォーカスしない
 
+2019.2でなおった模様
+
+それ以前の場合は以下
+
 ~/.xxx/config/idea.properties (Help->Edit Custom Properties)
 に
 
