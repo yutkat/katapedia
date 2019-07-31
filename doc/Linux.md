@@ -680,6 +680,10 @@ https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Specifiers
 
 ## Tips
 
+### ターミナルの表示を変更する
+
+`echo -ne "\033]0;SOME TITLE HERE\007"`
+
 ### 全体バックアップ
 
 `tar cpfl - / | ssh server-user@file-server "dd of=/archive-dir-path/hogehoge.tar"`
