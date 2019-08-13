@@ -1,13 +1,14 @@
 # Rust
 
-## 公式ドキュメント
+## ドキュメント
 
-これが一番参考になるのでぐぐる必要はない
+公式が一番参考になるのでぐぐる必要はない
 
 - https://doc.rust-jp.rs/book/second-edition/
 - https://doc.rust-jp.rs/rust-by-example-ja/
 - https://doc.rust-lang.org/beta/std/index.html
 - https://sinkuu.github.io/api-guidelines/
+- https://cheats.rs/
 
 命名規約
 
