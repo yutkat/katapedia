@@ -189,6 +189,10 @@
 
 ## [Zabbix](./doc/Zabbix.md)
 
+## [Grafana](./doc/Grafana.md)
+
+## [Prometheus/Loki](./doc/Prometheus_Loki.md)
+
 ## [RDB](./doc/RDB.md)
 
 ## [NoSQL](./doc/NoSQL.md)
