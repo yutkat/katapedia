@@ -1,5 +1,9 @@
 # Prometheus
 
+## grok_exporter
+
+Lokiを使わなくてもエラーが発生した件数だけならgrok_exporterの結果をPrometheusに飛ばすことで検知できる。
+
 
 # Loki
 
