@@ -113,25 +113,34 @@ ALTER TABLE cps_def ALTER COLUMN no_imaging_flag TYPE integer USING (no_imaging_
 
 ### Tips
 
-### integerからdayに変換する
+#### カラムのjsonのデータにアクセスする
+
+```
+select (select jsonb_agg(t -> 'time') from jsonb_array_elements(parameters) as x(t)) from table where type = 'A';
+```
+
+https://dba.stackexchange.com/questions/229069/extract-json-array-of-numbers-from-json-array-of-objects
+https://www.postgresql.jp/document/11/html/datatype-json.html
+
+#### integerからdayに変換する
 
 かければいい
 
 `2 * interval '1 day'`
 
-### intervalから日数だけintegerで抜き出す
+#### intervalから日数だけintegerで抜き出す
 
 `extract(day from '2019-07-22 10:00:00' - time)`
 
-### intervalから日数だけ抜き出す
+#### intervalから日数だけ抜き出す
 
 `date_trunc('days', '2019-07-22 10:00:00' - time)`
 
-### datetimeをtimeにキャストする方法
+#### datetimeをtimeにキャストする方法
 
 cast("start_time" as time)
 
-### 特定のカラムを対象として重複行を削除したい
+#### 特定のカラムを対象として重複行を削除したい
 
 https://stackoverflow.com/questions/9795660/postgresql-distinct-on-with-different-order-by
 
@@ -142,11 +151,11 @@ https://stackoverflow.com/questions/9795660/postgresql-distinct-on-with-differen
 
 https://stackoverflow.com/questions/42367917/postgres-add-description-of-an-enum-value
 
-### ひとつ前のレコードの前回値を取得する
+#### ひとつ前のレコードの前回値を取得する
 
 https://blog-asnpce.com/technology/1345
 
-### ORDER BYでnull値を除外する
+#### ORDER BYでnull値を除外する
 
 `WHERE target_column IS NOT NULL ORDER BY target_column`
 
