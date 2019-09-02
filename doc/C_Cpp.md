@@ -272,6 +272,15 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -Wall --coverage")
 
 ## Tips
 
+### static関数 vs namespace
+
+JavaやC#と違ってnamespaceを使うのが一般的な模様。
+
+https://stackoverflow.com/questions/14361408/using-a-namespace-in-place-of-a-static-class-in-c
+https://softwareengineering.stackexchange.com/questions/134448/where-should-i-put-functions-that-are-not-related-to-a-class
+https://stackoverflow.com/questions/9321/how-do-you-create-a-static-class-in-c/9328#9328
+
+
 ### C++で型を変数にしてcastしたい
 
 できない
@@ -310,7 +319,6 @@ https://gcc.gnu.org/projects/cxx-status.html
 #### 共有ライブラリから別の共有ライブラリをリンクすり
 
 http://masahir0y.blogspot.jp/2013/01/shared-object.html
-
 
 
 #### メンバ変数をコールバックで呼び替える
