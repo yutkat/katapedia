@@ -113,6 +113,10 @@ ALTER TABLE cps_def ALTER COLUMN no_imaging_flag TYPE integer USING (no_imaging_
 
 ### Tips
 
+### カラム内のJson配列の結果の最大値を取得する
+
+`select max(cast(j.jsonb_array_elements_text as integer)) from (select jsonb_array_elements_text(t.time_range) from (select (select jsonb_agg(t -> 'time') as time_range from jsonb_array_elements(param_array) as x(t)) from data where type = 'D') t) j;`
+
 ### 型を調べる
 
 pg_typeof
