@@ -113,6 +113,10 @@ ALTER TABLE cps_def ALTER COLUMN no_imaging_flag TYPE integer USING (no_imaging_
 
 ### Tips
 
+### 型を調べる
+
+pg_typeof
+
 #### カラムのjsonのデータにアクセスする
 
 ```
