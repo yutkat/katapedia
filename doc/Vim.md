@@ -896,6 +896,12 @@ let validlist=filter(copy(list), "v:val !~ '^$'")
 
 ## Tips
 
+### オプション(set xxx)が存在しているか判定する
+
+`echo exists('&xxx')`
+
+シングルクオートが必要なので注意
+
 ### 16進表示にする
 
 `00 01 02 03 04`
