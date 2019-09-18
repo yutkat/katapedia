@@ -167,6 +167,11 @@ https://yuk1tyd.hatenablog.com/entry/2018/03/21/225533
 
 ## Tips
 
+### 最適化したい
+
+rustcにオプションをつける
+`-C opt-level=3 -C debug_assertions=no`
+
 ### lines()でreferenceが使えない
 
 by_ref()を使う
