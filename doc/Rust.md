@@ -167,6 +167,14 @@ https://yuk1tyd.hatenablog.com/entry/2018/03/21/225533
 
 ## Tips
 
+### ジェネリクスでの型を指定する
+
+turbofish　::<>を使う
+
+``` rust
+let _a = AAA::<i64>(0);
+```
+
 ### 最適化したい
 
 rustcにオプションをつける
