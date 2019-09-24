@@ -1,5 +1,9 @@
 # その他Webサービス
 
+## CPU比較サイト
+
+https://cpu.userbenchmark.com/
+
 ## Unicode文字テーブル検索
 
 http://www.rapidtables.com/code/text/unicode-characters.htm
