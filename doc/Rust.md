@@ -167,6 +167,12 @@ https://yuk1tyd.hatenablog.com/entry/2018/03/21/225533
 
 ## Tips
 
+### std::threadで? operatorを使いたい
+
+fast returnしたいときのやり方。closureに戻り値を書く
+
+https://stackoverflow.com/questions/56535634/propagating-errors-from-within-a-closure-in-a-thread-in-rust
+
 ### ジェネリクスでの型を指定する
 
 turbofish　::<>を使う
