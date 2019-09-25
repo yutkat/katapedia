@@ -165,6 +165,13 @@ possible_valuesを使ってfrom_strで変換するのがよさげ
 
 https://yuk1tyd.hatenablog.com/entry/2018/03/21/225533
 
+## 並列/並行処理
+
+### スレッド
+
+https://totem3.hatenablog.jp/entry/2017/05/10/210000
+
+
 ## Tips
 
 ### std::threadで? operatorを使いたい
