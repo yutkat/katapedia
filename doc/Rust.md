@@ -174,6 +174,52 @@ https://totem3.hatenablog.jp/entry/2017/05/10/210000
 
 ## Tips
 
+### 非同期で関数をループ実行
+
+``` rust
+fn run_async<P: AsRef<Path>>(
+    input_files: &Vec<P>,
+) -> Result<Vec<PathBuf>, Error> {
+    let v = Arc::new(Mutex::new(vec![]));
+    thread::scope(|s| -> Result<(), Error> {
+        for input_file_ in input_files {
+            let input_file = input_file_.as_ref().clone();
+            let v = Arc::clone(&v);
+            s.spawn(move |_| -> Result<(), Error> {
+                let output_file = format!(
+                    "out_{}",
+                    input_file
+                        .file_stem()
+                        .ok_or(format_err!("Could not convert to filename"))?
+                        .to_str()
+                        .ok_or(format_err!("Could not convert to string"))?
+                );
+                let mut v1 = v.lock().unwrap();
+                match run_app(&input_file, &output_file) {
+                    Ok(p) => v1.push(p),
+                    Err(e) => warn!(
+                        "Error Occured!: {}. Skip: {}",
+                        e.to_string(),
+                        &output_file
+                    ),
+                }
+                Ok(())
+            });
+            std::thread::sleep(std::time::Duration::from_secs(0));
+        }
+        Ok(())
+    })
+    .map_err(|_| format_err!("Thread execution error"))?
+    .map_err(|e| format_err!("Thread execution error: {}", e))?;
+
+    let ret = v
+        .lock()
+        .map_err(|e| format_err!("lock error: {}", e))?
+        .to_vec();
+    Ok(ret)
+}
+```
+
 ### std::threadで? operatorを使いたい
 
 fast returnしたいときのやり方。closureに戻り値を書く
