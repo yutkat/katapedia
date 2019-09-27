@@ -277,6 +277,7 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -Wall --coverage")
 コストを気にするならshared_ptrで返したほうがいいが、moveセマンティクスもあるためそのまま返したほうが読みやすいのではと思っている
 
 参考：
+https://stackoverflow.com/questions/45806526/move-semantic-vs-returning-a-shared-ptr
 https://stackoverflow.com/questions/7977141/return-vectorfoo-or-shared-ptrvectorfoo
 
 ### static関数 vs namespace
