@@ -680,6 +680,20 @@ https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Specifiers
 
 ## Tips
 
+### デフォルトアプリケーションの設定
+
+確認
+`xdg-mime  query default text/html`
+
+設定
+`xdg-mime  default chromium.desktop text/html`
+
+ファイル
+`$HOME/.config/mimeapps.list`
+
+
+https://wiki.archlinux.jp/index.php/%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3
+
 ### ターミナルの表示を変更する
 
 `echo -ne "\033]0;SOME TITLE HERE\007"`
