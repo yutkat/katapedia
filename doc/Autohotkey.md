@@ -67,7 +67,8 @@ return
 ^BS::
 Send, ^+{Left}{Delete}
 
-RWin::Send ^{Space}
+; RWin::Send ^{Space}
+RWin::Send {vkF3sc029}
 
 Capslock::Ctrl
 sc03a::Ctrl
