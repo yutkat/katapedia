@@ -896,6 +896,10 @@ let validlist=filter(copy(list), "v:val !~ '^$'")
 
 ## Tips
 
+### 関数が存在しているか判定する
+
+`exists('*xxx')`
+
 ### オプション(set xxx)が存在しているか判定する
 
 `echo exists('&xxx')`
