@@ -152,6 +152,13 @@ https://github.com/sagiegurari/cargo-make
 
 `Utc::now().naive_utc()`
 
+### static変数
+
+```
+let x: &'static str = "Hello, world.";
+static Foo: i32 = 5;
+let x: &'static i32 = &FOO;
+```
 
 ## よく使うcrate
 
