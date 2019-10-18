@@ -162,7 +162,8 @@ https://github.com/rdesktop/rdesktop/issues/28
 インストール
 `sudo pacman -S freerdp`
 
-`xfreerdp /u:<username>  /f +fonts +clipboard  /v:<ip>`
+`xfreerdp /u:<username>  /f +fonts +compression  +smart-sizing  -clipboard  /v:<ip>`
+
 
 #### 認証エラーになるとき
 
