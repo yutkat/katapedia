@@ -164,6 +164,14 @@ https://github.com/rdesktop/rdesktop/issues/28
 
 `xfreerdp /u:<username>  /f +fonts +clipboard  /v:<ip>`
 
+#### 認証エラーになるとき
+
+会社アカウントとかで認証エラーになるとき
+
+add option
+`/gt:http /sec:tls`
+
+https://github.com/FreeRDP/FreeRDP/issues/4781#issuecomment-474383962
 
 ### mysql
 
