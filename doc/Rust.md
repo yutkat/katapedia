@@ -181,6 +181,15 @@ https://totem3.hatenablog.jp/entry/2017/05/10/210000
 
 ## Tips
 
+### 関数の引数でたくさんの型を許容したい
+
+- &Tとmut &Tを受け付けたい: Borrowを使う 
+https://doc.rust-jp.rs/the-rust-programming-language-ja/1.6/book/borrow-and-asref.html
+- Pathっぽいものを受け付けたい：AsRef<Path>を使う
+- &strとStringを受け入れたい： Into<String> or AsRef<str>
+https://exoskeleton.dev/proglang/rust/rust-8.md#String%E3%81%A8Into%3CString%3E
+
+
 ### 非同期で関数をループ実行
 
 ``` rust
