@@ -953,6 +953,10 @@ hi WarningMsg ctermfg=white ctermbg=red guifg=White guibg=Red gui=None
 
 ## FAQ
 
+### if文をワンライナーで
+
+if exists(':PlugInstalla') | qall | else | cq | endif
+
 ### batch mode（コマンドライン）でexit code 0以外で終了させる
 
 :cq
