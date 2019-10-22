@@ -57,6 +57,9 @@ format!("{:0>7.7}", string);
 
 入力は`&str`(がんばるなら<S: Into<String>>(s: S)がいい)、出力は`String`がよい気がする
 
+### 型変換
+
+https://qiita.com/legokichi/items/0f1c592d46a9aaf9a0ea
 
 ### リファクタリング
 
