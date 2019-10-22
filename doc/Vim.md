@@ -953,6 +953,10 @@ hi WarningMsg ctermfg=white ctermbg=red guifg=White guibg=Red gui=None
 
 ## FAQ
 
+### batch mode（コマンドライン）でexit code 0以外で終了させる
+
+:cq
+
 ### 最短一致
 
 ~~~
