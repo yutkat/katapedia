@@ -953,6 +953,13 @@ hi WarningMsg ctermfg=white ctermbg=red guifg=White guibg=Red gui=None
 
 ## FAQ
 
+### インサートモードで次の行に移動する
+
+- Ctrl-Right
+- Ctrl-O k
+
+https://stackoverflow.com/questions/36599208/move-cursor-in-insert-mode-from-line2-head-to-line1-tail-in-vim
+
 ### if文をワンライナーで
 
 if exists(':PlugInstalla') | qall | else | cq | endif
