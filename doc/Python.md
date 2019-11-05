@@ -2,7 +2,9 @@
 
 ## 中級者向けの読み物
 
-https://python.ms/
+- https://python.ms/
+- https://qiita.com/papi_tokei/items/2aef9a259fd236d340da
+
 
 ## awesome python
 
