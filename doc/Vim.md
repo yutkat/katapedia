@@ -745,6 +745,9 @@ vim -u vimrc --noplugin --startuptime  /tmp/speedcheck_org.txt
 
 sort -k3  /tmp/speedcheck.txt
 
+### デフォルトとの起動時間比較一行野郎
+
+`echo "scale=3; $(vi --startuptime /tmp/stime_mine.log -c 'quit' > /dev/null && tail -n 1 /tmp/stime_mine.log | cut -d ' ' -f1) / $(vi -u DEFAULTS --startuptime /tmp/stime_def.log  -c 'quit' > /dev/null && tail -n 1 /tmp/stime_def.log | cut -d ' ' -f1)" | bc | xargs -i echo {}x slower your Vim than the default.`
 
 ### message（more-prompt）で検索できるようにする
 
