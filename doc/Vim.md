@@ -1129,6 +1129,13 @@ sudo apt-get install vim-gnome
 
 ## TroubleShooting
 
+### neovimでSSH先でうまくクリップボード共有がされない
+
+https://qiita.com/gotchane/items/0e7e6e0d5c7fa9f55c1a
+
+DISPLAYが設定されてたりしたらOSC52が使われなかったりする
+
+
 ### neovimでmarkをdelmarkしても開き直したら復活する
 
 `wshada!`
