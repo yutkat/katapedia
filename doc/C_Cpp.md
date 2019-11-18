@@ -1,4 +1,4 @@
-# CC++
+# C/C++
 
 ***新しくC/C++を使って書くならRustで書くことを検討したほうがいい***
 
@@ -928,6 +928,13 @@ https://isocpp.org/wiki/faq/const-correctness#constptrptr-conversion
 
 
 ## FAQ
+
+### 継承する際に継承元のアクセススコープを狭い方向に変更したい（public->protectedなど）
+
+`class Car : private Engine`
+
+https://www.bogotobogo.com/cplusplus/private_inheritance.php
+
 
 ### クラスと構造体の選択
 
