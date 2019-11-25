@@ -689,6 +689,17 @@ https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Specifiers
 
 ## Tips
 
+### ターミナルで使えるC-特殊キー
+
+- C-@ = C-Space
+- ^^
+- ^[ = Esc
+- ^]
+- ^\
+- ^? = BS
+- ^_
+
+
 ### デフォルトアプリケーションの設定
 
 確認
