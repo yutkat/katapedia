@@ -332,6 +332,13 @@ https://stackoverflow.com/questions/1759587/un-submodule-a-git-submodule
 
 ## Tips
 
+### gitconfigにユーザー情報を入れたくない
+
+GIT_AUTHOR_NAME=""
+GIT_AUTHOR_EMAIL=""
+
+を定義しておけばよい
+
 ### 一部のファイルのみをstashする
 
 stashしないファイルをgit addする
