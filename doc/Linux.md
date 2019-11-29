@@ -689,6 +689,15 @@ https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Specifiers
 
 ## Tips
 
+### CRLFの改行コードを探す
+
+`find . -type f | xargs grep -lzUP '\r\n'`
+
+LFに変換する
+
+`find . -type f | xargs grep -lzUP '\r\n' | xargs -i nkf -Lu --overwrite {}`
+
+
 ### ターミナルで使えるC-特殊キー
 
 - C-@ = C-Space
