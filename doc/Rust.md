@@ -210,6 +210,23 @@ https://totem3.hatenablog.jp/entry/2017/05/10/210000
 
 ## Tips
 
+### 文字列から改行を削除する
+
+```rust
+fn trim_newline(s: &mut String) {
+    while s.ends_with('\n') || s.ends_with('\r') {
+        s.pop();
+    }
+}
+```
+
+```rust
+let len = input.trim_end_matches(&['\r', '\n'][..]).len();
+input.truncate(len);
+```
+
+https://blog.v-gar.de/2019/04/rust-remove-trailing-newline-after-input/
+
 ### 関数の引数でたくさんの型を許容したい
 
 - &Tとmut &Tを受け付けたい: Borrowを使う 
