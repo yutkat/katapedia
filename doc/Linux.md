@@ -440,6 +440,20 @@ find . | cpio -o -H newc | xz -9 –format=lzma > ../new-initrd.img
 
 ## Troubleshooting
 
+### なんか起動後ちょっとしてノートパソコンの画面の輝度が上がってカーソルがカクつく現象
+
+jounalctlで見張っておくと処理が遅くなったときに以下が出る
+
+```
+[  184.156188] audit: type=1130 audit(1575565427.320:53): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-backlight@backlight:intel_backlight comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+```
+
+これが原因なのは間違いなさそう
+https://wiki.archlinux.jp/index.php/%E3%83%90%E3%83%83%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%88#xbacklight
+
+マスクすればよさげだが、そうすると以前の輝度に戻る機能がなくなる模様。
+
+
 ### なぜかシャットダウンできない
 
 poweroff とか haltとかでもシャットダウンできないときに強引にシャットダウンする
