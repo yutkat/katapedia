@@ -271,6 +271,17 @@ https://findy.jp/15270
 
 ### [関数名でよく使われる英単語](関数名でよく使われる英単語.md)
 
+### productionとかdevelopmentとかtestとかstagingとかの環境変数にふさわしい名前
+
+- DEPLOY_ENV
+- NODE_ENV
+- DEPLOY_TYPE
+- APP_ENV
+- EXECUTION_MODE
+- WORKING_ENV
+- ENVIRONMENT
+
+
 ### Tips
 
 #### prefixとsuffix
