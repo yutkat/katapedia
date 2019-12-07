@@ -210,6 +210,12 @@ https://totem3.hatenablog.jp/entry/2017/05/10/210000
 
 ## Tips
 
+### boolをResult型に変換する
+
+ boolinatorを使うのがよさそう
+
+https://stackoverflow.com/questions/54841351/how-do-i-idiomatically-convert-a-bool-to-an-option-or-result-in-rust
+
 ### 文字列から改行を削除する
 
 ```rust
