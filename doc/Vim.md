@@ -730,6 +730,11 @@ http://vimcolorschemetest.googlecode.com/svn/html/index-c.html
 
 ## 小ネタ
 
+### 一行コピーしてしてしまったが文の途中に差し込みたい
+
+普通にpすると一行したに挿入されてしまう。
+そういうときはvp。ビジュアルモードにしてから貼り付ければ途中に貼り付けられる。改行はされるが、Jで結合する。
+
 ### 起動速度改善
 
 `vim -X --startuptime /tmp/speedcheck.txt`
