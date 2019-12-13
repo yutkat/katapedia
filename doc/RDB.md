@@ -174,6 +174,11 @@ target_columnに別名をつけているの場合はWHEREできないので
 
 ## MySQL
 
+### コマンド
+
+`mysql -uroot -p'password' -D database_name`
+
+
 ### TroubleShooting
 
 #### ActiveRecord::StatementInvalid (Mysql2::Error: Incorrect string value:というエラーが出る
