@@ -74,6 +74,11 @@ Input SourcesにJapaneseを追加
 
 ## Arch
 
+### yayでImprove “invalid character ‘<’ looking for beginning of value” errorsが出る
+
+サーバーがメンテナンス中の可能性が高い。少し待てば接続できるようになるかと。
+
+
 ### pacman,yaourt
 
 https://wiki.archlinux.jp/index.php/Pacman_%E6%AF%94%E8%BC%83%E8%A1%A8
