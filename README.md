@@ -108,7 +108,7 @@
 
 # 言語
 
-## [C_Cpp](./doc/C_Cpp.md)
+## [C/Cpp](./doc/C_Cpp.md)
 
 ## [Go](./doc/Go.md)
 
