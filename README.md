@@ -158,9 +158,11 @@
 
 ## [Zsh](./doc/Zsh.md)
 
-## [vim_neovim](./doc/Vim.md)
+## [vim/neovim](./doc/Vim.md)
 
 ## [tmux](./doc/Tmux.md)
+
+## [dotfiles](./doc/dotfiles.md)
 
 ## [Eclipse](./doc/Eclipse.md)
 
