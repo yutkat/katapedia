@@ -43,6 +43,20 @@ https://www.10106.net/~hoboaki/wiki/index.php?C%2B%2B%2F%E3%82%B3%E3%83%BC%E3%83
 
 ### [configure](configure.md)
 
+### CMake
+
+#### Configファイルをインストールに含める
+
+`INSTALL(DIRECTORY "config" DESTINATION ${INSTALL_CONFIG} COMPONENT "configurations")`
+
+#### デフォルトのインストール先を変更する
+
+```
+if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+  set(CMAKE_INSTALL_PREFIX "/${PROJECT_PACKAGE_NAME}" CACHE PATH "..." FORCE)
+endif()
+```
+
 ### cscope
 
 
