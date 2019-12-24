@@ -929,6 +929,14 @@ https://isocpp.org/wiki/faq/const-correctness#constptrptr-conversion
 
 ## FAQ
 
+### コンフィグファイルをどこにインストールすべきか
+
+/etcか/usr/local/etc
+
+https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch04s09.html
+https://unix.stackexchange.com/questions/15473/what-is-the-difference-between-etc-and-usr-local-etc
+
+
 ### 継承する際に継承元のアクセススコープを狭い方向に変更したい（public->protectedなど）
 
 `class Car : private Engine`
