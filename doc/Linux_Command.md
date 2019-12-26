@@ -271,6 +271,13 @@ http://www.bigegg.net/post/17548414073/cat-foo-txt-awk-print
 `--autogen`をつけると自動生成も計測してくれる
 
 
+## jq
+
+### すべてのstringの値を抜き出したい
+
+`jq -r 'recurse(.[]?) | strings'`
+
+
 ## よくわからなくなるコマンド
 
 ### eval
