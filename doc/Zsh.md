@@ -97,7 +97,18 @@ zsh	yank				CTRL+Y
 
 zsh	copy-region-as-kill		ESC w
 
+### 編集
 
+#### エディタでコマンドを編集
+
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^xe' edit-command-line
+bindkey '^x^e' edit-command-line
+
+https://nuclearsquid.com/writings/edit-long-commands/
+
+`fc`でもいける
 
 ### ヒストリ機能
 
