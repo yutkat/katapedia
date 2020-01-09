@@ -158,7 +158,7 @@
 
 ## [Zsh](./doc/Zsh.md)
 
-## [vim/neovim](./doc/Vim.md)
+## [Vim/Neovim](./doc/Vim.md)
 
 ## [tmux](./doc/Tmux.md)
 
