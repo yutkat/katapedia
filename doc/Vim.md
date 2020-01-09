@@ -1141,6 +1141,10 @@ sudo apt-get install vim-gnome
 
 ## TroubleShooting
 
+### mapがどこで定義されているかを知る
+
+`verbose imap <CR>`
+
 ### neovimでSSH先でうまくクリップボード共有がされない
 
 https://qiita.com/gotchane/items/0e7e6e0d5c7fa9f55c1a
