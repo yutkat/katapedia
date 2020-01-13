@@ -378,6 +378,20 @@ http://localhost:631
 
 ---
 
+## タッチパッドとかの入力デバイスの設定
+
+よくsynapticsを使う設定（synclient）が書いてあるが古い模様
+
+xinputを使ったほうがいい。
+
+`xinput list`でデバイス一覧
+`xinput list-prop デバイス名`で設定一覧
+`xinput set-prop デバイス名 設定名 値`で設定変更
+
+ができる
+
+---
+
 
 ## Hack
 
