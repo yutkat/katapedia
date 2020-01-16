@@ -297,6 +297,12 @@ ssh-copyid -i .ssh/id_rsa.pub xxx@xxx
 
 ## 外部デバイス
 
+### udevでのキーマップ変更
+
+https://yulistic.gitlab.io/2017/12/linux-keymapping-with-udev-hwdb/
+https://github.com/FreeRDP/FreeRDP/issues/505#issuecomment-148165369
+
+
 ### ディレクトリ接続時に自動接続
 
 `/etc/udev/rules.d/95-monitor-hotplug.rules`
