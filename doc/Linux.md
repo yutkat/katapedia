@@ -295,6 +295,16 @@ ssh-copyid -i .ssh/id_rsa.pub xxx@xxx
 
 ---
 
+## フォント
+
+### fontconfig
+
+https://manpages.ubuntu.com/manpages/disco/man5/fonts-conf.5.html
+
+/etc/fonts/conf.d
+
+---
+
 ## 外部デバイス
 
 ### udevでのキーマップ変更
