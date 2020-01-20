@@ -86,6 +86,11 @@ STATUS_RIGHT_SIMPLE="#[default]#[fg=black,bg=white] %h %d(%a)|%H:%M#[default]"
 STATUS_RIGHT_DETAIL="#[fg=white,bg=red]?#(cat /var/lib/update-notifier/updates-available | cut -s -d ' ' -f1 | paste -d ' ' -s)!#[fg=yellow,bg=blue]#(cut -d ' ' -f 1-3 /proc/loadavg)#[default]#[fg=black,bg=white] %h %d(%a) %Y|%H:%M#[default]"
 ~~~
 
+
+##### ウィンドウサイズによって動的にstatus-left, status-rightを変更する
+
+https://coderwall.com/p/trgyrq/make-your-tmux-status-bar-responsive
+
 #### ローカルインストール
 
 ~~~
