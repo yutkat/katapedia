@@ -205,6 +205,8 @@
 
 ## [Webサーバ](./doc/Webサーバ.md)
 
+## [Webブラウザ](./doc/Webブラウザ.md)
+
 ## [チャットツール](./doc/チャットツール.md)
 
 ## [Word](./doc/Word.md)
