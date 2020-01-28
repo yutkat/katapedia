@@ -309,8 +309,9 @@ https://manpages.ubuntu.com/manpages/disco/man5/fonts-conf.5.html
 
 ### udevでのキーマップ変更
 
-https://yulistic.gitlab.io/2017/12/linux-keymapping-with-udev-hwdb/
-https://github.com/FreeRDP/FreeRDP/issues/505#issuecomment-148165369
+- https://yulistic.gitlab.io/2017/12/linux-keymapping-with-udev-hwdb/
+- https://wiki.archlinux.jp/index.php/%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E3%82%AD%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AB%E3%83%9E%E3%83%83%E3%83%97
+- https://github.com/FreeRDP/FreeRDP/issues/505#issuecomment-148165369
 
 
 ### ディレクトリ接続時に自動接続
