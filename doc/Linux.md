@@ -314,7 +314,7 @@ https://manpages.ubuntu.com/manpages/disco/man5/fonts-conf.5.html
 - https://github.com/FreeRDP/FreeRDP/issues/505#issuecomment-148165369
 
 keycode
-/usr/include/linux/input-event-codes.h (
+/usr/include/linux/input-event-codes.h
 
 
 ### ディレクトリ接続時に自動接続
