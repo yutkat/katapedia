@@ -1316,11 +1316,13 @@ Change the value for the correct key (in your case, this should be show-desktop)
 
 #### LinuxでAutoHotKeyのようなキーバインドにするには
 
-xvkbd xbindkeys or xmodmapを使えば一応可能。
+xvkbd xbindkeys or xmodmapを使えば一応可能。 -> Xmodmapはやめたほうがいい
+
+使うならsetxkbmapかloadkeys使うかudevのhwdbがいい
+
+setxkbmapの設定は/usr/share/X11/xkb/rules/evdev.lstや/usr/share/X11/xkb/symbols/にある
 
 しかし、以下の点で不具合がでるため使用しない。
-
 ・ターミナルのショートカットと衝突する
-
 ・Linuxではalt_l,alt_rという認識はしていないため、mod1,mod2として使用する必要がある。そうすると片方のaltはaltとして機能しなくなる（controlはしている模様）
 
