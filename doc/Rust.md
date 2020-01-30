@@ -9,6 +9,7 @@
 - https://doc.rust-lang.org/beta/std/index.html
 - https://sinkuu.github.io/api-guidelines/
 - https://cheats.rs/
+- https://lib.rs/ (crate.ioよりも洗練されてて事実上の標準ライブラリがわかるようになっていてよい)
 
 命名規約
 
