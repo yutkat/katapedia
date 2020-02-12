@@ -737,6 +737,13 @@ https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Specifiers
 
 ## Tips
 
+### 複数のスペース（空白）をcutで処理する
+
+`tr -s ' '`を使う
+
+例：
+`df -h | grep -w '/' | tr -s ' ' | cut -d " " -f 5`
+
 ### CRLFの改行コードを探す
 
 `find . -type f | xargs grep -lzUP '\r\n'`
