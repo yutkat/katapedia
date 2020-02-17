@@ -195,6 +195,11 @@ zsh	list-expand			CTRL+X g
 zsh	list-choices			ESC CTRL+D
 
 
+## 補完機能の拡張
+
+https://rcmdnk.com/blog/2015/05/15/computer-linux-mac-zsh/
+
+
 ## Tips
 
 ### zshでcdlsするときに関数とaliasを使わずにchpwdを使う理由
