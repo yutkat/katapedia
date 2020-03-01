@@ -211,6 +211,18 @@ https://totem3.hatenablog.jp/entry/2017/05/10/210000
 
 ## Tips
 
+### OsStringからfailtureに変換する
+
+the trait `std::error::Error` is not implemented for `std::ffi::OsString`
+
+``` rust
+pathbuf.
+    .into_os_string()
+    .into_string()
+    .map_err(|x| format_err!("Home env not found {:?}", x))?)
+```
+
+
 ### boolをResult型に変換する
 
  boolinatorを使うのがよさそう
