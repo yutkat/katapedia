@@ -915,6 +915,11 @@ let validlist=filter(copy(list), "v:val !~ '^$'")
 
 ## Tips
 
+### 連続するスペースを置換する
+
+`:s/[ ]\+/aaa/g`
+
+
 ### 関数が存在しているか判定する
 
 `exists('*xxx')`
