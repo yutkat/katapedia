@@ -10,6 +10,7 @@
 - https://sinkuu.github.io/api-guidelines/
 - https://cheats.rs/
 - https://lib.rs/ (crate.ioよりも洗練されてて事実上の標準ライブラリがわかるようになっていてよい)
+- https://rust-lang.github.io/rustup-components-history/
 
 命名規約
 
