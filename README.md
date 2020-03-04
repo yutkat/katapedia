@@ -141,6 +141,8 @@
 
 ## [GitHub](./doc/GitHub.md)
 
+## [CI](./doc/CI.md)
+
 ## [その他Webサービス](./doc/その他Webサービス.md)
 
 ## [オンプレミスサーバ管理](./doc/オンプレミスサーバ管理.md)
