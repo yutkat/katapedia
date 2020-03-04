@@ -55,6 +55,11 @@ worksforme 報告者の勘違いなどで登録された
 
 https://github.com/vim-jp/issues/wiki/Member
 
+### ラベル
+
+- `(╯°□°)╯︵ ┻━┻` https://github.com/ryanoasis/vim-devicons/labels/%28%E2%95%AF%C2%B0%E2%96%A1%C2%B0%29%E2%95%AF%EF%B8%B5%20%E2%94%BB%E2%94%81%E2%94%BB
+
+
 ## Pull Request(プルリクエスト)
 
 ### 書くべき内容
