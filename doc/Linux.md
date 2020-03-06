@@ -737,6 +737,13 @@ https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Specifiers
 
 ## Tips
 
+### 関数がどこで定義されているか調べる
+
+`type`
+
+https://unix.stackexchange.com/questions/322817/how-to-find-the-file-where-a-bash-function-is-defined
+
+
 ### 複数のスペース（空白）をcutで処理する
 
 `tr -s ' '`を使う
