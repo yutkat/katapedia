@@ -1156,6 +1156,14 @@ https://qiita.com/gotchane/items/0e7e6e0d5c7fa9f55c1a
 
 DISPLAYが設定されてたりしたらOSC52が使われなかったりする
 
+とりあえずxorg-x11-xauthとxclip or xselをいれて、DISPLAY設定して、
+クライアント側で、
+`xauth list`
+でトークン取得して
+サーバー側で、
+`xauth add ${DISPLAY} . (token)`
+が一番手っ取り早くていい気がする。
+
 
 ### neovimでmarkをdelmarkしても開き直したら復活する
 
