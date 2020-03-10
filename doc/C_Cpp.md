@@ -952,6 +952,7 @@ https://isocpp.org/wiki/faq/const-correctness#constptrptr-conversion
 clangが悪いみたい。2020/03/10現在まだ解決してなさげ。
 https://bugs.llvm.org/show_bug.cgi?id=40484
 
+boostもclangでコンパイルするとうまくリンクできた
 
 ## FAQ
 
