@@ -945,6 +945,13 @@ http://stackoverflow.com/questions/18273610/c-char-to-const-char-conversion/1827
 https://isocpp.org/wiki/faq/const-correctness#constptrptr-conversion
 
 
+### clangを使ってboostのregexをstatic linkしようとするとエラーになる
+
+`/usr/bin/ld: /usr/local/lib/libboost_regex.a(regex.o): relocation R_X86_64_PC32 against undefined hidden symbol `_ZTCN5boost10wrapexceptISt13runtime_errorEE0_NS_16exception_detail10clone_implINS3_19error_info_injectorIS1_EEEE' can not be used when making a shared object`
+
+clangが悪いみたい。2020/03/10現在まだ解決してなさげ。
+https://bugs.llvm.org/show_bug.cgi?id=40484
+
 
 ## FAQ
 
