@@ -1146,6 +1146,10 @@ sudo apt-get install vim-gnome
 
 ## TroubleShooting
 
+### 矩形選択で置換したい
+
+`:'<,'>:s/\%Vhoge/foo/g`
+
 ### mapがどこで定義されているかを知る
 
 `verbose imap <CR>`
