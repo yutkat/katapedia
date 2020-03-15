@@ -215,6 +215,13 @@ https://totem3.hatenablog.jp/entry/2017/05/10/210000
 
 ## Tips
 
+### &Option<T>からOption<T>に変換したい
+    
+aaa.as_ref() でOption<&T>に変換して、
+aaa.as_ref().cloned() でOption<T>にする
+
+https://stackoverflow.com/questions/51338579/how-to-convert-optiont-to-optiont-in-the-most-idiomatic-way-in-rust
+
 ### OsStringからfailtureに変換する
 
 the trait `std::error::Error` is not implemented for `std::ffi::OsString`
