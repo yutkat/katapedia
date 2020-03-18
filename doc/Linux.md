@@ -10,6 +10,13 @@
 
 ## デスクトップマネージャ
 
+### sway
+
+#### waylandかx11か調べる
+
+`echo $XDG_SESSION_TYPE`
+
+
 ### i3
 
 #### キーマップ
