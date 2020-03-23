@@ -323,6 +323,13 @@ https://manpages.ubuntu.com/manpages/disco/man5/fonts-conf.5.html
 keycode
 /usr/include/linux/input-event-codes.h
 
+### udev関連でよく使うコマンド
+
+設定ファイルがある： `cd /usr/lib/udev/`
+デバイス一覧的なやつ:`sudo evtest`
+現在値：`sudo udevadm info xxx`
+設定反映：`sudo systemd-hwdb update && sudo udevadm trigger`
+
 
 ### ディレクトリ接続時に自動接続
 
