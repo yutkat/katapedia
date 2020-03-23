@@ -26,6 +26,14 @@ https://wiki.archlinux.jp/index.php/Tp_smapi
 
 ### Troubleshooting
 
+#### トラックポイントの速度変更
+
+なぜかsystemd-hwdbのPOINTINGSTICK_SENSITIVITYではうまくいかない
+たぶん名前が悪い？TPPS/2 Elan TrackPoint。IBMならうまくいくみたい。
+
+xinputはうまくいく。
+Waylandでも/etc/libinput/xxx.quirksならうまくいった
+
 #### システム暗号化
 
 dm-encryptを使ってcryptsetupしてシステムを暗号化したが、起動時にパスワードプロンプトが表示されない
