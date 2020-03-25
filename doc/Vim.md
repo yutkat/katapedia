@@ -903,6 +903,12 @@ let unduplist=filter(copy(list), 'index(list, v:val, v:key+1)==-1')
 
 let validlist=filter(copy(list), "v:val !~ '^$'")
 
+### 変数の存在確認
+
+- global: get(g:, 'aaa')
+- script local: exists('s:xxx')
+
+
 
 ## vimdiff
 
