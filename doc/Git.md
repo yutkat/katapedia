@@ -332,6 +332,21 @@ https://stackoverflow.com/questions/1759587/un-submodule-a-git-submodule
 
 ## Tips
 
+### No newline at end of fileを一括で修正する
+
+```shell
+for i in $(git ls-files | xargs -i file {} | grep --line-buffered "ASCII\|UTF-8" | cut -d ":" -f 1); do  echo $i; \
+ if diff /dev/null "$i" | tail -1 | \
+  grep '^\\ No newline' > /dev/null; then echo >> "$i"; \
+fi; done
+```
+
+### 一括で改行コードを修正する
+
+```shell
+git ls-files | xargs -i file {} | grep --line-buffered "ASCII\|UTF-8" | cut -d ":" -f 1 | xargs -i nkf  -Lu --overwrite {}
+```
+
 ### gitconfigにユーザー情報を入れたくない
 
 GIT_AUTHOR_NAME=""
