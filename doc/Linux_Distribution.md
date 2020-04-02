@@ -72,7 +72,18 @@ Input SourcesにJapaneseを追加
 `rpm -qi`
 
 
-## Arch
+## ArchLinux
+
+### pacmanでダウングレード
+
+`sudo pacman  -U /var/cache/pacman/pkg/lib32-mesa-19.3.4-3-x86_64.pkg.tar.zst`
+
+### 特定のパッケージをアップデートしないようにする
+
+/etc/pacman.conf
+
+IgnorePkg にスペース区切りで記入
+
 
 ### yayでImprove “invalid character ‘<’ looking for beginning of value” errorsが出る
 
