@@ -11,6 +11,9 @@ http://postd.cc/vim-galore-1/#what-is-vim
 http://haya14busa.com/vim-mnemonic/
 
 
+---
+
+
 ## よく忘れるコマンド
 
 http://www3.kcn.ne.jp/~okina/vim_blank.html
@@ -325,6 +328,21 @@ zw	カーソル下の単語を誤ったスペルとして辞書登録
 
 insertモードで
 <C-r>=
+
+### Vim間でviminfoを使って（クリップボードを使わずに）ヤンクする
+
+ヤンクしたあと
+
+`:wv`: 書き出し
+
+ペーストする前に
+`:rv!`: 読み込み
+
+行数が足りないときは
+`set viminfo='20,\"50` の50のところを調整する
+
+
+---
 
 
 ## vimの基礎
