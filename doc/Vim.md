@@ -945,6 +945,16 @@ let validlist=filter(copy(list), "v:val !~ '^$'")
 
 ## Tips
 
+### コマンドでウィンドウサイズ変更
+
+`resize -3`
+`vertical resize -3`
+
+### 自動でウィンドウサイズを変更しないようにする
+
+`set noequalalways`
+
+
 ### 連続するスペースを置換する
 
 `:s/[ ]\+/aaa/g`
