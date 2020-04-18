@@ -319,6 +319,15 @@ zle -R を使う
 `wget http://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh ~~O ~~ | sh`
 
 
+
+## スクリプト
+
+### フラグとか変数展開とかの記号の意味
+
+https://gist.github.com/sho-t/d9cdf8271b3de7c4238739e523490542
+
+
+
 ## TroubleShooting
 
 ### 補完が遅いコマンドがあるときに無効にしたい
