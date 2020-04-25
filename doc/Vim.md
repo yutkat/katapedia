@@ -486,6 +486,19 @@ exe   ":botright cwindow"
 
 endfunction
 
+## よくミスる書き方
+
+### autocmdにautgroupがない
+
+```vim
+augroup MyXXX
+  autocmd!
+  autocmd XXX
+augroup END
+```
+
+
+
 
 ## 設定
 
