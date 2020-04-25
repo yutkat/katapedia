@@ -497,6 +497,9 @@ augroup MyXXX
 augroup END
 ```
 
+### mapにs:
+
+map, noremapはs:xxxの代わりに<SID>にしなくては動かない
 
 
 
