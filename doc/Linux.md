@@ -16,6 +16,19 @@
 
 `echo $XDG_SESSION_TYPE`
 
+#### タッチパッドとかマウスとかの速度を変更する
+
+sway inputをconfigに追加する
+https://www.mankier.com/5/sway-input#
+
+名前はswaymsg -t get_inputsで取得できる
+
+```
+input "0:1336:USB_OPTICAL_MOUSE" {        
+  pointer_accel 0.7
+}
+```
+
 
 ### i3
 
