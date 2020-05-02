@@ -948,6 +948,7 @@ let validlist=filter(copy(list), "v:val !~ '^$'")
 - global: get(g:, 'aaa')
 - script local: exists('s:xxx')
 
+あるなしなら グローバルでも exists('g:xxx') でいいが、中身を精査したい場合はgetのほうがいい
 
 
 ## vimdiff
