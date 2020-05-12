@@ -437,6 +437,12 @@ xinputを使ったほうがいい。
 
 ができる
 
+###  Coordinate Transformation Matrixの設定
+
+https://wiki.archlinux.org/index.php/Talk:Calibrating_Touchscreen
+https://en.wikipedia.org/wiki/Transformation_matrix#/media/File:2D_affine_transformation_matrix.svg
+
+
 ---
 
 
