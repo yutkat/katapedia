@@ -442,6 +442,11 @@ xinputを使ったほうがいい。
 https://wiki.archlinux.org/index.php/Talk:Calibrating_Touchscreen
 https://en.wikipedia.org/wiki/Transformation_matrix#/media/File:2D_affine_transformation_matrix.svg
 
+### タッチパッドの有効エリアをudevで設定する
+
+`sudo touchpad-edge-detector 1936x1057 /dev/input/event15`
+
+https://wayland.freedesktop.org/libinput/doc/latest/absolute-coordinate-ranges.html#absolute-coordinate-ranges-fix
 
 ---
 
