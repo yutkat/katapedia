@@ -182,6 +182,16 @@ https://github.com/sagiegurari/cargo-make
 
 ## よく使う構文
 
+### Vecの要素を条件ごとに削除したりしたい
+
+```rust
+let mut vec = vec![1, 2, 3, 4];
+vec.retain(|&x| x % 2 == 0);
+assert_eq!(vec, [2, 4]);
+```
+
+https://stackoverflow.com/questions/37792471/removing-elements-from-a-vec-based-on-some-condition
+
 ### 現在時刻取得
 
 `Utc::now().naive_utc()`
