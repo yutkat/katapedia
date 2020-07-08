@@ -775,6 +775,10 @@ https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Specifiers
 
 ## Tips
 
+### AsciiとHex文字列を相互変換する方法
+
+https://stackoverflow.com/a/49903434/5720201
+
 ### 関数がどこで定義されているか調べる
 
 `type`
