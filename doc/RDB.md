@@ -178,6 +178,12 @@ target_columnに別名をつけているの場合はWHEREできないので
 
 `mysql -uroot -p'password' -D database_name`
 
+### Tips
+
+#### バイナリを曖昧検索する
+
+`SELECT * FROM table WHERE data like BINARY CONCAT('%', 0x6671, '%')`
+
 
 ### TroubleShooting
 
