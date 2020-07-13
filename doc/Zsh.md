@@ -202,6 +202,10 @@ https://rcmdnk.com/blog/2015/05/15/computer-linux-mac-zsh/
 
 ## Tips
 
+### 起動方法とZSH_EVAL_CONTEXTの関係
+
+https://github.com/sorin-ionescu/prezto/issues/1180#issuecomment-241249202
+
 ### zshでcdlsするときに関数とaliasを使わずにchpwdを使う理由
 
 AUTO_CDのときに使えなくなるため
