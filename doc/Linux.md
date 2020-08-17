@@ -8,6 +8,10 @@
 
 ## [omniauthによるアカウント統合](omniauthによるアカウント統合.md)
 
+## Systemd
+
+https://speakerdeck.com/moriwaka/systemd-intro
+
 ## デスクトップマネージャ
 
 ### sway
