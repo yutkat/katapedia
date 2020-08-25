@@ -779,6 +779,17 @@ https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Specifiers
 
 ## Tips
 
+### Linuxで一般的に各ファイルをインストールする場所
+
+- $XDG_DATA_HOME (default: "$HOME/.local/share"): user-specific data files.
+- $XDG_CONFIG_HOME (default: "$HOME/.config"): user-specific configuration files.
+- $XDG_DATA_DIRS (default: "/usr/local/share/:/usr/share/"): precedence-ordered set of system data directories.
+- $XDG_CONFIG_DIRS (default: "/etc/xdg"): precedence-ordered set of system configuration directories.
+- $XDG_CACHE_HOME (default: "$HOME/.cache"): user-specific non-essential data files.
+
+https://stackoverflow.com/a/1024339/5720201
+
+
 ### AsciiとHex文字列を相互変換する方法
 
 https://stackoverflow.com/a/49903434/5720201
