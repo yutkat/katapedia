@@ -42,7 +42,7 @@ input "0:1336:USB_OPTICAL_MOUSE" {
 
 #### TroubleShooting
 
-#### mod+v,mod+hで作った親コンテナが削除できない
+##### mod+v,mod+hで作った親コンテナが削除できない
 
 mod+shift+up等で移動させれば自動的に削除される
 
@@ -515,6 +515,12 @@ find . | cpio -o -H newc | xz -9 –format=lzma > ../new-initrd.img
 ~~~
 
 ## Troubleshooting
+
+### パフォーマンス分析ツール
+
+https://speakerdeck.com/govargo/cndt2020-linux-observability-with-bpf-performance-tools
+
+
 
 ### なんか起動後ちょっとしてノートパソコンの画面の輝度が上がってカーソルがカクつく現象
 
