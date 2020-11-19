@@ -154,6 +154,18 @@ echo "$HOME/local/bin/tmux is now available. You can optionally add $HOME/local/
 
 ## TroubleShooting
 
+### tmuxでshift-spaceやshift-enter,Ctrl-enterが効かない理由
+
+https://unix.stackexchange.com/questions/310532/can-i-use-shift-space-in-a-tmux-keybinding
+
+xterminfoはここに定義されてる
+https://invisible-island.net/xterm/terminfo-contents.html
+
+Neovimは
+http://www.leonerd.org.uk/code/libtickit/
+でやってるからできる
+
+
 ### attachしたときに表示サイズがおかしくなるので再描画したい
 
 `tmux attach -d`で解決する
