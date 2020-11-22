@@ -168,6 +168,8 @@
 
 ## [tmux](./doc/Tmux.md)
 
+## [ターミナル](./doc/terminal.md)
+
 ## [dotfiles](./doc/dotfiles.md)
 
 ## [Eclipse](./doc/Eclipse.md)
