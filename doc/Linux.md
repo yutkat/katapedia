@@ -516,6 +516,15 @@ find . | cpio -o -H newc | xz -9 –format=lzma > ../new-initrd.img
 
 ## Troubleshooting
 
+### Linuxでヘッドセットをしているときに自分がマイクでしゃべってる声を聞きたい
+
+`pactl load-module module-loopback latency_msec=1`
+
+解除はこっち
+`pacmd unload-module module-loopback`
+
+https://askubuntu.com/questions/123798/how-to-hear-my-voice-in-speakers-with-a-mic
+
 ### パフォーマンス分析ツール
 
 https://speakerdeck.com/govargo/cndt2020-linux-observability-with-bpf-performance-tools
