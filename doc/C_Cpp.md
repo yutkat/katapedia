@@ -291,6 +291,12 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -Wall --coverage")
 
 ## Tips
 
+### -fPICがついてるか調べる
+
+`readelf --relocs foo.o | egrep '(GOT|PLT|JU?MP_SLOT)'`
+
+https://stackoverflow.com/questions/1340402/how-can-i-tell-with-something-like-objdump-if-an-object-file-has-been-built-wi/1351771#1351771
+
 ### 戻り値をshared_ptr<Foo>で返すかそのままFooを返すか
 
 コストを気にするならshared_ptrで返したほうがいいが、moveセマンティクスもあるためそのまま返したほうが読みやすいのではと思っている
