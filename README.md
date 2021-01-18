@@ -138,6 +138,8 @@
 
 ## [C#](./doc/csharp.md)
 
+## [Lua](./doc/lua.md)
+
 ---
 
 
