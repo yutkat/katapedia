@@ -4,6 +4,7 @@
 
 * Syntax highlight
 * Code Complete
+* LSP
 * Emmet/Snippets
 * Lint, Style Check
 * Static Analysis
@@ -14,8 +15,8 @@
 * Builder, Task Runner
 * VCS
 * Command Mode
-* Filer
-* Intelligent Search
+* Terminal
+* Intelligent Search(FuzzyFinder)
 * Code Format
 * Comment out, Uncomment
 * Split Window
