@@ -2,26 +2,39 @@
 
 ## あるべき機能
 
+### Read/Write Assistant
+
 * Syntax highlight
 * Code Complete
-* LSP
-* Emmet/Snippets
-* Lint, Style Check
-* Static Analysis
-* Code Jump
 * Auto Close
+* Comment out, Uncomment
+
+### Code Assistant
+
+* LSP
+* Code Jump
 * Type Info
+* Emmet/Snippets
+* Code Generator(Template)
+
+### External tool integration
+
 * Debugger
 * Builder, Task Runner
 * VCS
-* Command Mode
 * Terminal
-* Intelligent Search(FuzzyFinder)
+
+### Quality Control
+
+* Lint, Style Check
+* Static Analysis
 * Code Format
-* Comment out, Uncomment
+
+### etc
+
+* Intelligent Search(FuzzyFinder)
+* Command Mode
 * Split Window
 * Older cursor position/Newer cursor position
-* Code Generator
+* Customizable keybinds
 * Plugin
-
-
