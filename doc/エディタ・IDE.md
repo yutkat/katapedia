@@ -22,6 +22,6 @@
 * Split Window
 * Older cursor position/Newer cursor position
 * Code Generator(New class,Setter/Getter)
-* Quick Run
+* Plugin
 
 
