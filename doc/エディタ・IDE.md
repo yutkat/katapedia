@@ -21,7 +21,7 @@
 * Comment out, Uncomment
 * Split Window
 * Older cursor position/Newer cursor position
-* Code Generator(New class,Setter/Getter)
+* Code Generator
 * Plugin
 
 
