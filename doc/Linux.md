@@ -794,6 +794,12 @@ https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Specifiers
 
 ## Tips
 
+### GitHubの最新のリリースをダウンロードする
+
+`curl -sfL https://api.github.com/repos/yuru7/HackGen/releases | grep -wo "https.*.zip" | head -n 1`
+
+https://stackoverflow.com/a/54836319 
+
 ### Linuxで一般的に各ファイルをインストールする場所
 
 - $XDG_DATA_HOME (default: "$HOME/.local/share"): user-specific data files.
