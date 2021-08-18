@@ -82,6 +82,12 @@ http://yutapon.hatenablog.com/entry/2014/02/16/003052
 
 ### FAQ
 
+#### 特定のプロパティを除外して新しいオブジェクトを作る
+
+Object Rest Destructuring
+ComputedPropertyName
+https://rikuba.hatenablog.com/entry/20180202/ecmascript_object_omit
+
 #### yeomanで作成したプロジェクトのbuildに失敗する
 
 generator-backboneのgruntファイルに含まれているuserminがrequire.jsのブロックに対応していないので、index.htmlに書かれているような下記の状態だとエラーでbuildできない
