@@ -1,5 +1,21 @@
 # Javascript
 
+## JSの使い方
+
+### FAQ
+
+#### 特定のプロパティを除外して新しいオブジェクトを作る
+
+Object Rest Destructuring
+ComputedPropertyName
+https://rikuba.hatenablog.com/entry/20180202/ecmascript_object_omit
+
+#### 特定のフィールドのみキーをつけて取得する
+
+```javascript
+...a.map((v: any) => ({ value: v.value })),
+```
+
 ## npm
 
 --save-dev（package.jsonに書き込む設定）オプションは絶対に付けること！
@@ -81,12 +97,6 @@ http://yutapon.hatenablog.com/entry/2014/02/16/003052
 
 
 ### FAQ
-
-#### 特定のプロパティを除外して新しいオブジェクトを作る
-
-Object Rest Destructuring
-ComputedPropertyName
-https://rikuba.hatenablog.com/entry/20180202/ecmascript_object_omit
 
 #### yeomanで作成したプロジェクトのbuildに失敗する
 
