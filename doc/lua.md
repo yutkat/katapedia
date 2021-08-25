@@ -2,7 +2,22 @@
 
 ## Tips
 
-### テーブルを
+### 即時関数にする
+
+```lua
+      base_dirs = (function()
+        local dirs = {}
+        return dirs
+      end)()
+```
+
+### リストをadd
+
+```lua
+dirs[#dirs + 1] = {'~/.ghq', max_depth = 5}
+```
+
+### テーブルを表示する
 
 ```lua
 function tprint (tbl, indent)
