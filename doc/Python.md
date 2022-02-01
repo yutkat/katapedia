@@ -108,6 +108,16 @@ packages = find:
  - pipenv run pytest -v --cov=operation_reporter
 ```
 
+## Poetry
+
+### Pythonのバージョンを固定する
+
+```bash
+pyenv install 3.6.8
+poetry env use ~/.pyenv/shims/python3.6
+poetry shell
+```
+
 ## Tips
 
 ### 文字コードとasciiの変換
