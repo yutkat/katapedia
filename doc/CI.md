@@ -13,9 +13,7 @@ if [[ ! -d ~/.ssh ]]; then
 fi
 
 if [[ -z "$PRIVATE_KEY" ]]; then
-    echo ""
-    echo "Do not deploy the rpm to rpm.stars.axelspace.com."
-    echo "Because PRIVATE_KEY is not defined"
+    echo "PRIVATE_KEY is not defined"
     exit 1
 fi
 
@@ -23,7 +21,7 @@ echo "$PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
 chmod 600 ~/.ssh/id_rsa
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
-ssh-keyscan -p 777 rpm.stars.axelspace.com >> ~/.ssh/known_hosts
+ssh-keyscan www.example.com >> ~/.ssh/known_hosts
 
 ```
 
