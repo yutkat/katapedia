@@ -20,4 +20,11 @@
 
 fでリンクを検索できるのが便利
 
+## Dev tools
+
+### すべてのdetailsをtoggle
+
+```javascript
+document.body.querySelectorAll('article details').forEach((e) => (e.hasAttribute('open')) ? e.removeAttribute('open') : e.setAttribute('open',true))
+```
 
