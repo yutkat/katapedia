@@ -332,6 +332,10 @@ https://stackoverflow.com/questions/1759587/un-submodule-a-git-submodule
 
 ## Tips
 
+### 過去のコミットの名前を全書き換えする
+ 
+`git filter-branch -f --env-filter "GIT_AUTHOR_NAME='sea_mountain'; GIT_AUTHOR_EMAIL='valid_email@example.com'; GIT_COMMITTER_NAME='sea_mountain'; GIT_COMMITTER_EMAIL='valid_email@example.com';" HEAD`
+ 
 ### No newline at end of fileを一括で修正する
 
 ```shell
