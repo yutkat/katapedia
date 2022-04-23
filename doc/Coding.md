@@ -336,6 +336,13 @@ https://yakst.com/ja/posts/3859
 
 https://gist.github.com/rowanmanning/77f31b2392dda1b58674#file-readme-md
 
+#### READMEじゃないけど大文字でルートに置くファイルたち
+
+- CONTRIBUTING.md
+- CHANGELOG.md
+- LICENSE.md
+
+https://github.com/kmindi/special-files-in-repository-root/blob/master/README.md
 
 ###  [リリースノート](リリースノート.md)
 
