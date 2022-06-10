@@ -794,6 +794,11 @@ https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Specifiers
 
 ## Tips
 
+### 連続した複数の改行をまとめる
+
+sed -z 's/\n\{3,\}/\n\n/g
+https://genzouw.com/entry/2019/09/09/085746/1722/
+
 ### GitHubの最新のリリースをダウンロードする
 
 `curl -sfL https://api.github.com/repos/yuru7/HackGen/releases | grep -wo "https.*.zip" | head -n 1`
