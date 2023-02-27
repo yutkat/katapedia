@@ -856,8 +856,11 @@ LFに変換する
 
 ### デフォルトアプリケーションの設定
 
-確認
+今の設定確認
 `xdg-mime  query default text/html`
+
+指定したいファイルがどのタイプか確認
+`xdg-mime query filetype ~/xxx.xls`
 
 設定
 `xdg-mime  default chromium.desktop text/html`
