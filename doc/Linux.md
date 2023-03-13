@@ -420,6 +420,18 @@ WantedBy=sleep.target
 
 ---
 
+## LibreOffice
+
+### 設定をデフォルトに戻す
+
+ Options->Application ColorsのデフォルトのColor schemeをいじったけどもとの色がわからなくなったときなど。
+
+ここに変更された履歴があるので該当の部分を削除する（LibreOfficeは落としておく）
+
+`~/.config/libreoffice/4/user/registrymodifications.xcu`
+
+---
+
 ## プリンタ
 
 ### プリンタ設定
