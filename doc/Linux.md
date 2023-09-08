@@ -430,6 +430,44 @@ WantedBy=sleep.target
 
 `~/.config/libreoffice/4/user/registrymodifications.xcu`
 
+### マクロで一括文字色変更
+
+`mkdir -p ~/.config/libreoffice/4/user/Scripts/python`
+```python
+import uno
+
+def FontColorAutomatic():
+    # Get access to the document
+    document = XSCRIPTCONTEXT.getDocument()
+    controller = document.getCurrentController()
+    frame = controller.getFrame()
+    
+    # Create a dispatch helper
+    ctx = XSCRIPTCONTEXT.getComponentContext()
+    dispatcher = ctx.ServiceManager.createInstanceWithContext("com.sun.star.frame.DispatchHelper", ctx)
+    
+    # Select all text
+    dispatcher.executeDispatch(frame, ".uno:SelectAll", "", 0, ())
+    
+    # Set font color to automatic
+    args1 = []
+    arg1 = uno.createUnoStruct('com.sun.star.beans.PropertyValue')
+    arg1.Name = "Color.Color"
+    arg1.Value = -1
+    args1.append(arg1)
+    
+    arg2 = uno.createUnoStruct('com.sun.star.beans.PropertyValue')
+    arg2.Name = "Color.ComplexColorJSON"
+    arg2.Value = '{\n    "ThemeIndex": "-1",\n    "Transformations": ""\n}'
+    args1.append(arg2)
+    
+    dispatcher.executeDispatch(frame, ".uno:Color", "", 0, tuple(args1))
+
+# Connect this Python script to LibreOffice
+g_exportedScripts = FontColorAutomatic,
+```
+
+
 ---
 
 ## プリンタ
