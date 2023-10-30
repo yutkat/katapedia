@@ -467,6 +467,29 @@ def FontColorAutomatic():
 g_exportedScripts = FontColorAutomatic,
 ```
 
+### マクロで一括フォーマットセルを文字に
+
+```
+sub AllTextCell
+rem ----------------------------------------------------------------------
+rem define variables
+dim document   as object
+dim dispatcher as object
+rem ----------------------------------------------------------------------
+rem get access to the document
+document   = ThisComponent.CurrentController.Frame
+dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
+
+rem ----------------------------------------------------------------------
+dispatcher.executeDispatch(document, ".uno:SelectAll", "", 0, Array())
+dim args1(0) as new com.sun.star.beans.PropertyValue
+args1(0).Name = "NumberFormatValue"
+args1(0).Value = 100
+
+dispatcher.executeDispatch(document, ".uno:NumberFormatValue", "", 0, args1())
+
+end sub
+```
 
 ---
 
