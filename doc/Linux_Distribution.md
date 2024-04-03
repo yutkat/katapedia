@@ -89,6 +89,12 @@ IgnorePkg にスペース区切りで記入
 
 サーバーがメンテナンス中の可能性が高い。少し待てば接続できるようになるかと。
 
+### makepkgでソースを編集してインストールし直す
+
+```bash
+rm *.pkg.tar.zst
+makepkg -si
+```
 
 ### pacman,yaourt
 
