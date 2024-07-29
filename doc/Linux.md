@@ -188,6 +188,9 @@ https://github.com/rdesktop/rdesktop/issues/28
 
 `xfreerdp /u:<username>  /f +fonts +compression  +smart-sizing -clipboard  /v:<ip> -grab-keyboard`
 
+ファイルを共有したい場合
+
+`xfreerdp3 /d: /u:<user> /p:<pass> /w:2560 /h:1440 +fonts +compression +smart-sizing +clipboard:files-to:all /v:localhost /port:<port> /drive:share,<filepath>`
 
 #### 認証エラーになるとき
 
