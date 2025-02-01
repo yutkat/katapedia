@@ -28,22 +28,15 @@ http://freak-da.hatenablog.com/entry/20111105/p1
 * stageする	特定の変更内容をindexに登録する(次回commit分に含める)
 * index	次回commit分のファイル一覧
 
-|_.コマンド|_.意味|
-
+|コマンド|意味|
+|---|---|
 |git init|カレントディレクトリ以下をgit管理下に置く|
-
 |git add <filename> |<filename>をstageする。<filename>に.(ピリオド)を指定すると変更分全て|
-
 |git commit -m "<message>" | 1行メッセージ付きでcommitする|
-
 |git status | stage(to be commited)と変更分(not updated)の状態を確認する|
-
 |git reset [<target>]| <target>(git logで表示されるハッシュ文字列部分)まで戻る。指定が無ければindexを全てunstageする|
-
 |git log [--format=oneline]|commitの履歴を見る。オプションでformatが幾つか指定出来る|
-
 |git rm|ファイルを削除してgitに削除したことを伝える|
-
 |git clean -fdxn ←確認 危険！必ず確認すること  実行→ git clean -fdx |管理対象外のファイルを削除する|
 
 
