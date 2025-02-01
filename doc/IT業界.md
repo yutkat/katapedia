@@ -43,15 +43,8 @@ http://itpro.nikkeibp.co.jp/atcl/column/14/463805/021000073/
 
 ### 変わらない開発現場
 
-https://blogs.msdn.microsoft.com/nakama/2017/05/25/devmodernization/
-
-https://docs.com/decode2016/9106
-
-https://blogs.msdn.microsoft.com/nakama/2016/06/16/decode-2016-clt016/
-
-https://blogs.msdn.microsoft.com/nakama/2016/06/24/waterfall/
-
-https://blogs.msdn.microsoft.com/nakama/2016/07/03/nextstep/
+- https://blogs.msdn.microsoft.com/nakama/2016/06/16/decode-2016-clt016/
+- https://blogs.msdn.microsoft.com/nakama/2016/07/03/nextstep/
 
 
 ### 変化するSIer
