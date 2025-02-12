@@ -703,6 +703,32 @@ Batman! (this commit has no parents)
 
 ## FAQ
 
+### rootからコミットをすべて変更する
+
+### メッセージ変更
+
+```bash
+git filter-branch --msg-filter 'sed -e "s/xxx/aaa/g"' -f
+```
+
+### メールアドレス変更
+
+```bash
+git filter-repo -f --mailmap mailmap
+```
+
+mailmapの形式は
+
+```
+New Name <new@users.noreply.github.com> Old Name <old@gmail.com>
+```
+
+### Commit Dateを変えずに署名付与
+
+```bash
+git rebase -i --exec 'echo "Processing commit: $(git rev-parse HEAD)"; current_commit=$(git rev-parse HEAD); echo "Hash: $current_commit" "Commit Date: $(git show -s --format=%ai $current_commit)"; export GIT_COMMITTER_DATE="$(git show -s --format=%ai $current_commit)"; git commit --amend --no-edit --date "$(git show -s --format=%ai $current_commit)"' --root
+```
+
 ### git@github.com形式でダウンロードできない場合
 
 ~/.gitconfig
@@ -711,7 +737,6 @@ Batman! (this commit has no parents)
 [url "http://github.com/"]
 insteadOf = git@github.com:
 ~~~
-
 
 ### [Gitで大量のファイルの中から必要ファイルのみをaddする方法](Gitで大量のファイルの中から必要ファイルのみをaddする方法.md)
 
